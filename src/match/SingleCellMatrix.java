@@ -135,4 +135,163 @@ public class SingleCellMatrix {
             return true;
         }
     }
+    
+    public int[] getColumn(int i){
+        if(i < this.columnSize){
+            int[] column = new int[this.rowSize];
+            for(int j = 0; j < columnSize ; j++){
+                column[j] = this.singleCellMatrix[j][i];
+            }
+            return column;
+        }
+        else{
+            return new int[this.rowSize];
+        }
+    }
+    
+    public void commonGeneScoring(double thershold){
+        HashMap<String, ArrayList<Double>> sMatrix = this.getScoreMatrix();
+        int[] accessRecord = new int[this.columnSize];
+        int[] maxArray = this.findMaxPoint(sMatrix, accessRecord, 2);
+        double score = 0;
+        if(maxArray.length > 1)
+        {
+            score = sMatrix.get(""+maxArray[0]+"_"+maxArray[1]).get(maxArray[2]);
+        }
+        while (score > thershold){
+            
+        }
+        
+            
+                    
+    }
+    
+    
+    private ArrayList<Double> commonCompare(int[] lineA, int[] lineB){
+        int m_sum = 0;
+        if(lineA.length != lineB.length){
+            throw new Error("The compared paths are not equal line");
+        }
+        else{
+            ArrayList<Double> returnList = new ArrayList<Double>();
+            for(int i = 0; i < lineA.length; i++){
+                if(lineA[i] == 1 && lineB[i] == 1){
+                    if(m_sum == 0){
+                        returnList.add(-1.0);
+                    }
+                    else{
+                        returnList.add(1.0/m_sum);
+                    }
+                    m_sum = 0;
+                }
+                else{
+                    if(lineA[i] != lineB[i]){
+                        if(lineA[i] == 1){
+                            if(lineB[i] == 0){
+                                m_sum += 2;
+                            }
+                            else{
+                                m_sum += 1;
+                            }
+                        }
+                        else if(lineB[i] == 1){
+                            if(lineA[i] == 0){
+                                m_sum += 2;
+                            }
+                            else{
+                                m_sum += 1;
+                            }
+                        }
+                    }
+                    returnList.add(0.0);
+                    
+                }
+            }
+            return returnList;
+        }
+    }
+    
+    private HashMap<String, ArrayList<Double>> getScoreMatrix(){
+        HashMap<String, ArrayList<Double>> sMatrix = new HashMap<String, ArrayList<Double>>();
+        for(int i = 0; i < this.columnSize; i++){
+            for(int j = i+1; j < this.columnSize; j++){
+                ArrayList<Double> scoreLine = new ArrayList<Double>();
+                scoreLine = this.commonCompare(this.getColumn(i), this.getColumn(j));
+                sMatrix.put(""+i+"_"+j, scoreLine);
+            }
+        }
+        return sMatrix;
+    }
+    
+    private void mergeAtPoint(int i, int j, int point){
+        for(int k = 0; k < point; k++){
+            if(this.singleCellMatrix[k][i] == 1){
+                this.singleCellMatrix[k][j] = 1;
+            }
+            if(this.singleCellMatrix[k][j] == 1){
+                this.singleCellMatrix[k][i] = 1;
+            }
+        }
+    }
+    
+    private int[] findMaxPoint(HashMap<String, ArrayList<Double>> sMatrix){
+        String max_key = "";
+        double max_score = 0.0;
+        int max_p = 0;
+        for(String s: sMatrix.keySet()){
+            ArrayList<Double> sLine = sMatrix.get(s);
+            for(int i = 0; i < sLine.size(); i++){
+                if(max_score < sLine.get(i)){
+                    max_score = sLine.get(i);
+                    max_p = i;
+                    max_key = s;
+                }
+            }
+        }
+        if(max_key.length() == 0){
+            return new int[1];
+        }
+        else{
+            String[] keys = max_key.split("_");
+            int[] returnArray = new int[3];
+            returnArray[0] = Integer.parseInt(keys[0]);
+            returnArray[1] = Integer.parseInt(keys[1]);
+            returnArray[2] = max_p;
+            return returnArray;
+        }
+    }
+    
+    private int[] findMaxPoint(HashMap<String, ArrayList<Double>> sMatrix, int[] accessRecord, int accessControl){
+        int max_pairA = 0;
+        int max_pairB = 0;
+        double max_score = 0.0;
+        int max_p = 0;
+        for(String s: sMatrix.keySet()){
+            ArrayList<Double> sLine = sMatrix.get(s);
+            for(int i = 0; i < sLine.size(); i++){
+                if(max_score < sLine.get(i)){
+                    String[] tkeys = s.split("_");
+                    int A = Integer.parseInt(tkeys[0]);
+                    int B = Integer.parseInt(tkeys[1]);
+                    if(accessRecord[A] < accessControl && accessRecord[B] < accessControl){
+                        max_score = sLine.get(i);
+                        max_p = i;
+                        max_pairA = A;
+                        max_pairB = B;
+                    }                    
+                }
+            }
+        }
+        if(max_pairA + max_pairB == 0){
+            return new int[1];
+        }
+        else{
+            int[] returnArray = new int[3];
+            returnArray[0] = max_pairA;
+            returnArray[1] = max_pairB;
+            returnArray[2] = max_p;
+            return returnArray;
+        }
+    }
+    
 }
