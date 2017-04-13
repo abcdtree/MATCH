@@ -110,4 +110,29 @@ public class SingleCellMatrix {
         }
         return sb.toString();
     }
+    
+    public boolean pathSort(BulkSequence bs){
+        int[][] newMatrix = new int[this.rowSize][this.columnSize];
+        ArrayList<String> muts = new ArrayList<String>(Arrays.asList(this.mutations));
+        if(bs.size() != this.rowSize){
+            return false;
+        }
+        else{
+            int counter = 0;
+            for(Mutations s : bs.getMutations()){
+                String sName = s.getName();
+                int index = muts.indexOf(sName);
+                if(index < 0){
+                    return false;
+                }
+                else{
+                    newMatrix[counter] = this.singleCellMatrix[index];
+                }
+                counter++;
+            }
+            this.singleCellMatrix = newMatrix;
+            this.mutations = bs.getMutations().toArray(new String[bs.size()]);
+            return true;
+        }
+    }
 }

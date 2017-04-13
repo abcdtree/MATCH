@@ -29,6 +29,10 @@ public class BulkSequence {
         Collections.sort(myBulk);
     }
     
+    public ArrayList<Mutations> getMutations(){
+        return new ArrayList<Mutations>(this.myBulk);
+    }
+    
     public static BulkSequence readFromCSV(String csvFile){
         BulkSequence bs = new BulkSequence();
         try(BufferedReader br = new BufferedReader(new FileReader(csvFile))){
