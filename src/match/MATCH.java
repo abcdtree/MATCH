@@ -19,8 +19,12 @@ public class MATCH {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        /*
         SingleCellMatrix scm = SingleCellMatrix.readFromCSV("./testData.csv");
-        System.out.println(scm);
+        System.out.println(scm);*/
+        
+        BulkSequence bs = BulkSequence.readFromCSV("./test/Bulk.csv");
+        System.out.println(bs);
     }
     
 }
