@@ -19,12 +19,20 @@ public class MATCH {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        /*
-        SingleCellMatrix scm = SingleCellMatrix.readFromCSV("./testData.csv");
-        System.out.println(scm);*/
         
+        SingleCellMatrix scm = SingleCellMatrix.readFromCSV("./testData.csv");
+        System.out.println(scm);
+        /*
         BulkSequence bs = BulkSequence.readFromCSV("./test/Bulk.csv");
-        System.out.println(bs);
+        System.out.println(bs);*/
+        
+        scm.commonGeneScoring(0.2);
+        scm.commonRoot();;
+        
+        
+        System.out.println(scm);
+        PartialTree pt = PartialTree.makeATree(scm);
+        pt.outputCSV("./testOutput.csv");
     }
     
 }

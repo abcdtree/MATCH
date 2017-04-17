@@ -149,8 +149,47 @@ public class SingleCellMatrix {
         }
     }
     
+    public void commonRoot(){
+        if(!this.checkRoot()){
+            this.rowSize++;
+            int[][] newMatrix = new int[this.rowSize][this.columnSize];
+            String[] newMuts = new String[this.rowSize];
+            newMuts[0] = "Root";
+            for(int i = 1; i < this.rowSize; i++){
+                newMuts[i] = this.mutations[i-1];
+            }
+            int[] rootRow = new int[this.columnSize];
+            for(int j = 0; j < this.columnSize; j++){
+                rootRow[j] = 1;
+            }
+            newMatrix[0] = rootRow;
+            for(int i = 1; i < this.rowSize; i++){
+                newMatrix[i] = this.singleCellMatrix[i-1];
+            }
+            this.mutations = newMuts;
+            this.singleCellMatrix = newMatrix;
+        }
+    }
+    
+    private boolean checkRoot(){
+        if(this.rowSize > 0){
+            boolean flag = true;
+            for(int i: this.singleCellMatrix[0]){
+                if(i != 0 ){
+                    flag = false;
+                    break;                      
+                }
+            }
+            return flag;
+        }
+        else{
+            return false;
+        }
+    }
+    
     public void commonGeneScoring(double thershold){
         HashMap<String, ArrayList<Double>> sMatrix = this.getScoreMatrix();
+        //outputHash(sMatrix);
         int[] accessRecord = new int[this.columnSize];
         int[] maxArray = this.findMaxPoint(sMatrix, accessRecord, 2);
         double score = 0;
@@ -158,14 +197,40 @@ public class SingleCellMatrix {
         {
             score = sMatrix.get(""+maxArray[0]+"_"+maxArray[1]).get(maxArray[2]);
         }
-        while (score > thershold){
-            
-        }
         
+        //System.out.println(score);
+        //System.out.println(maxArray[0] + "," + maxArray[1]+","+maxArray[2]);
+        while (score > thershold){
+            accessRecord[maxArray[0]] = accessRecord[maxArray[0]] + 1;
+            accessRecord[maxArray[1]] = accessRecord[maxArray[1]] + 1;
+            this.mergeAtPoint(maxArray[0], maxArray[1], maxArray[2]);
+            sMatrix = this.getScoreMatrix();
+            //outputHash(sMatrix);
+            maxArray = this.findMaxPoint(sMatrix, accessRecord, 2);
+            if(maxArray.length > 1)
+            {
+                score = sMatrix.get(""+maxArray[0]+"_"+maxArray[1]).get(maxArray[2]);
+                //System.out.println(score);
+                //System.out.println(maxArray[0] + "," + maxArray[1]+","+maxArray[2]);
+            }
+            else{
+                score = 0;
+            }
             
-                    
+        }             
     }
     
+    private static void outputHash(HashMap<String, ArrayList<Double>> sMatrix){
+        StringBuilder sb = new StringBuilder();
+        for(String key : sMatrix.keySet()){
+            sb.append(key + ":");
+            for(Double d: sMatrix.get(key)){
+                sb.append("\t"+d);
+            }
+            sb.append("\n");
+        }
+        System.out.println(sb.toString());
+    }
     
     private ArrayList<Double> commonCompare(int[] lineA, int[] lineB){
         int m_sum = 0;
@@ -292,6 +357,24 @@ public class SingleCellMatrix {
             returnArray[2] = max_p;
             return returnArray;
         }
+    }
+    
+
+    
+    public int getColumnSize(){
+        return this.columnSize;
+    }
+    
+    public int getRowSize(){
+        return this.rowSize;
+    }
+    
+    public String[] getMuts(){
+        return this.mutations.clone();
+    }
+    
+    public int getCell(int i, int j){
+        return this.singleCellMatrix[i][j];
     }
     
 }
