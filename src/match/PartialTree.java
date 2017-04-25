@@ -107,4 +107,55 @@ public class PartialTree {
             count ++;
         }
     }
+    
+    public void reduceRepeat(int method){
+        //method id == i
+        //method 0
+        //leave the high level one, delete the lowers
+        if(method == 0){
+            ArrayList<String> muts = new ArrayList<String>();
+            ArrayList<TreeNode> level = new ArrayList<TreeNode>();
+            
+            level.add(this.root);
+            while(level.size() > 0){
+                ArrayList<TreeNode> temp = new ArrayList<TreeNode>();
+                for(TreeNode tn: level){
+                    this.checkNode(tn, muts, temp);
+                }
+                level = temp;
+            }
+        }
+    }
+    
+    private void checkNode(TreeNode tn, ArrayList<String> muts, ArrayList<TreeNode> level){
+        if(tn == null){
+            return;
+        }
+        else{
+            if(muts.contains(tn.getName())){
+                
+                TreeNode parent = tn.getParent();
+                ArrayList<TreeNode> children = parent.getChildren();
+                for(int i = 0; i < children.size(); i++){
+                    if(children.get(i).getName() == tn.getName()){
+                        parent.removeChild(i);
+                        break;
+                    }
+                }
+                for(TreeNode node: tn.getChildren()){
+                    parent.addChild(node);
+                    this.checkNode(node, muts, level);
+                }
+                
+            }
+            else{
+                muts.add(tn.getName());
+                for(TreeNode n: tn.getChildren()){
+                    if(n != null){
+                        level.add(n);
+                    }
+                }
+            }
+        }
+    }
 }

@@ -33,6 +33,10 @@ public class MATCH {
         System.out.println(scm);
         PartialTree pt = PartialTree.makeATree(scm);
         pt.outputCSV("./testOutput.csv");
+        
+        
+        pt.reduceRepeat(0);
+        pt.outputCSV("./testOutput2.csv");
     }
     
 }

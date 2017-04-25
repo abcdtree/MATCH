@@ -25,6 +25,12 @@ public class TreeNode {
         child.setParent(this);
     }
     
+    public void removeChild(int i){
+        if(i < this.children.size()){
+            this.children.remove(i);
+        }
+    }
+    
     public void setParent(TreeNode mParent){
         this.parent = mParent;
     }
