@@ -13,7 +13,7 @@ import java.io.*;
 public class BulkSequence {
     ArrayList<Mutations> myBulk;
     
-    private BulkSequence(){
+    public BulkSequence(){
         this.myBulk = new ArrayList<Mutations>();
     }
     
@@ -21,11 +21,11 @@ public class BulkSequence {
         return myBulk.size();
     }
     
-    private void add(Mutations mt){
+    public void add(Mutations mt){
         this.myBulk.add(mt);
     }
     
-    private void sort(){
+    public void sort(){
         Collections.sort(myBulk);
     }
     

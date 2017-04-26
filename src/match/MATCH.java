@@ -19,12 +19,12 @@ public class MATCH {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        /*
         SingleCellMatrix scm = SingleCellMatrix.readFromCSV("./testData.csv");
         System.out.println(scm);
-        /*
+        
         BulkSequence bs = BulkSequence.readFromCSV("./test/Bulk.csv");
-        System.out.println(bs);*/
+        System.out.println(bs);
         
         scm.commonGeneScoring(0.2);
         scm.commonRoot();;
@@ -36,7 +36,32 @@ public class MATCH {
         
         
         pt.reduceRepeat(0);
-        pt.outputCSV("./testOutput2.csv");
+        pt.outputCSV("./testOutput2.csv");*/
+        //String path = "./TestData/ddCloneSimulatedMatrix";
+        String path = "./TestData/MatrixTree100";
+        
+        File[] files = new File(path).listFiles();
+        for (File file: files){
+            DataHandle dh = new DataHandle(path + "/" + file.getName());
+        
+            SingleCellMatrix scm = dh.getSCM();
+            //System.out.println(scm);
+            BulkSequence bs = dh.getBulk();
+            //System.out.println(bs);
+
+            scm.pathSort(bs);
+            System.out.println(scm);
+            scm.commonGeneScoring(0.8);
+            scm.commonRoot();
+
+            //System.out.println(scm);
+
+            PartialTree pt = PartialTree.makeATree(scm);
+            pt.reduceRepeat(0);
+            pt.outputCSV(path + "Output1/" + file.getName());
+        }
+        
+        
     }
     
 }

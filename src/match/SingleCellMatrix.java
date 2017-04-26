@@ -18,7 +18,7 @@ public class SingleCellMatrix {
     String[] mutations;
     String[] cells;
     
-    private SingleCellMatrix(int[][] matrix, String[] cells, String[] mutations){
+    public SingleCellMatrix(int[][] matrix, String[] cells, String[] mutations){
         this.singleCellMatrix = matrix;
         this.rowSize = matrix.length;
         if(this.rowSize > 0){
@@ -41,7 +41,7 @@ public class SingleCellMatrix {
         }
     }
     
-    private SingleCellMatrix(){
+    public SingleCellMatrix(){
         this.singleCellMatrix = new int[4][4];
         this.columnSize = 4;
         this.rowSize = 4;
@@ -118,9 +118,11 @@ public class SingleCellMatrix {
             return false;
         }
         else{
+            ArrayList<String> mutNames = new ArrayList<String>();
             int counter = 0;
             for(Mutations s : bs.getMutations()){
                 String sName = s.getName();
+                mutNames.add(sName);
                 int index = muts.indexOf(sName);
                 if(index < 0){
                     return false;
@@ -131,7 +133,7 @@ public class SingleCellMatrix {
                 counter++;
             }
             this.singleCellMatrix = newMatrix;
-            this.mutations = bs.getMutations().toArray(new String[bs.size()]);
+            this.mutations = mutNames.toArray(new String[bs.size()]);
             return true;
         }
     }
@@ -139,7 +141,7 @@ public class SingleCellMatrix {
     public int[] getColumn(int i){
         if(i < this.columnSize){
             int[] column = new int[this.rowSize];
-            for(int j = 0; j < columnSize ; j++){
+            for(int j = 0; j < this.rowSize ; j++){
                 column[j] = this.singleCellMatrix[j][i];
             }
             return column;
@@ -175,7 +177,7 @@ public class SingleCellMatrix {
         if(this.rowSize > 0){
             boolean flag = true;
             for(int i: this.singleCellMatrix[0]){
-                if(i != 0 ){
+                if(i != 1 ){
                     flag = false;
                     break;                      
                 }
