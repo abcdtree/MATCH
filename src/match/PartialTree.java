@@ -7,18 +7,60 @@ package match;
 import java.util.*;
 import java.io.*;
 import java.lang.*;
+import myscite.AncestorMatrix;
+import myscite.MutationNameSpace;
 /**
  *
  * @author Jianshu
  */
 public class PartialTree {
     TreeNode root;
+    int size;
+    ArrayList<String> muts;
     private PartialTree(){
         this.root = null;
+        this.size = 0;
+        this.muts = new ArrayList<String>();
     }
     
     private PartialTree(TreeNode root){
         this.root = root;
+        this.size = 1;
+        this.muts = new ArrayList<String>();
+        muts.add(this.root.getName());
+    }
+    
+    public int size(){
+        return this.size;
+    }
+    
+    public AncestorMatrix getAncestorMatrix(){
+        int mSize = this.size();
+        ArrayList<String> nameSpace = this.muts;
+        AncestorMatrix mMatrix = new AncestorMatrix(mSize);
+        recBuildMatrix(this.root, mMatrix, nameSpace, mSize);
+        //System.out.println(muts.size());
+        //System.out.println(mMatrix.size());
+        //System.out.println(mSize);
+        mMatrix.setNameSpace(new MutationNameSpace(nameSpace));
+        
+        return mMatrix;
+    }
+    
+    private void recBuildMatrix(TreeNode current, AncestorMatrix mMatrix, ArrayList<String> nameSpace, int mSize){
+        int[] column = new int[mSize];
+        ArrayList<String> ancestors = current.getAncestors();
+        for(int i = 0; i < mSize; i ++){
+            if(ancestors.contains(nameSpace.get(i))){
+                column[i] = 1;
+            }
+        }
+        int j = nameSpace.indexOf(current.getName());
+        mMatrix.setColumn(column, j);
+        ArrayList<TreeNode> children = current.getChildren();
+        for(TreeNode child: children){
+            recBuildMatrix(child, mMatrix, nameSpace, mSize);
+        }
     }
     
     private void addAPath(ArrayList<String> path){
@@ -48,6 +90,8 @@ public class PartialTree {
                 if(!flag){
                     TreeNode temp = new TreeNode(path.get(i));
                     current.addChild(temp);
+                    this.muts.add(temp.getName());
+                    this.size++;
                     current = temp;
                 }
             }
@@ -139,6 +183,9 @@ public class PartialTree {
                 for(int i = 0; i < children.size(); i++){
                     if(children.get(i).getName() == tn.getName()){
                         parent.removeChild(i);
+                        this.size--;
+                        int k = this.muts.indexOf(tn.getName());
+                        this.muts.remove(k);
                         break;
                     }
                 }

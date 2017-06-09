@@ -33,6 +33,14 @@ public class BulkSequence {
         return new ArrayList<Mutations>(this.myBulk);
     }
     
+    public ArrayList<String> getMutNames(){
+        ArrayList<String> names = new ArrayList<String>();
+        for(Mutations m: this.myBulk){
+            names.add(m.getName());
+        }
+        return names;
+    }
+    
     public static BulkSequence readFromCSV(String csvFile){
         BulkSequence bs = new BulkSequence();
         try(BufferedReader br = new BufferedReader(new FileReader(csvFile))){

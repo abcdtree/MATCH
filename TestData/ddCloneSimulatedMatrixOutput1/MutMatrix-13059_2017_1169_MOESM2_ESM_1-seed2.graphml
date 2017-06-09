@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE graphml><graphml>
+<key id="nodename" for="node" attr.name="nodename" attr.type="string"/>
+<graph id="G" edgedefault="directed">
+<node id="1">
+	<data key="nodename">mut3_100</data>
+</node>
+<node id="10">
+	<data key="nodename">mut15_100</data>
+</node>
+<node id="100">
+	<data key="nodename">mut40_99</data>
+</node>
+<node id="1000">
+	<data key="nodename">mut28_97</data>
+</node>
+<node id="10000">
+	<data key="nodename">mut27_96</data>
+</node>
+<node id="100000">
+	<data key="nodename">mut1_94</data>
+</node>
+<node id="1000000">
+	<data key="nodename">mut24_94</data>
+</node>
+<node id="10000000">
+	<data key="nodename">mut10_67</data>
+</node>
+<node id="100000000">
+	<data key="nodename">mut17_57</data>
+</node>
+<node id="1000000000">
+	<data key="nodename">mut9_54</data>
+</node>
+<node id="10000000000">
+	<data key="nodename">mut37_12</data>
+</node>
+<node id="100000000000">
+	<data key="nodename">mut36_11</data>
+</node>
+<node id="100000001">
+	<data key="nodename">mut35_55</data>
+</node>
+<node id="1000000010">
+	<data key="nodename">mut9_54</data>
+</node>
+<node id="10000000100">
+	<data key="nodename">mut5_49</data>
+</node>
+<node id="100000001000">
+	<data key="nodename">mut32_40</data>
+</node>
+<node id="1000000010000">
+	<data key="nodename">mut31_18</data>
+</node>
+<node id="10000000100000">
+	<data key="nodename">mut41_18</data>
+</node>
+<node id="100000002">
+	<data key="nodename">mut9_54</data>
+</node>
+<node id="1000000020">
+	<data key="nodename">mut5_49</data>
+</node>
+<node id="10000000200">
+	<data key="nodename">mut32_40</data>
+</node>
+<node id="100000002000">
+	<data key="nodename">mut31_18</data>
+</node>
+<node id="1000000020000">
+	<data key="nodename">mut41_18</data>
+</node>
+<node id="100000003">
+	<data key="nodename">mut5_49</data>
+</node>
+<node id="1000000030">
+	<data key="nodename">mut32_40</data>
+</node>
+<node id="10000000300">
+	<data key="nodename">mut31_18</data>
+</node>
+<node id="100000003000">
+	<data key="nodename">mut41_18</data>
+</node>
+<node id="100001">
+	<data key="nodename">mut25_66</data>
+</node>
+<node id="1000010">
+	<data key="nodename">mut19_63</data>
+</node>
+<node id="10000100">
+	<data key="nodename">mut43_58</data>
+</node>
+<node id="100001000">
+	<data key="nodename">mut7_38</data>
+</node>
+<node id="1000010000">
+	<data key="nodename">mut29_6</data>
+</node>
+<node id="10000100000">
+	<data key="nodename">mut30_6</data>
+</node>
+<node id="100001000000">
+	<data key="nodename">mut39_6</data>
+</node>
+<node id="1000010000000">
+	<data key="nodename">mut12_5</data>
+</node>
+<node id="10000100000000">
+	<data key="nodename">mut23_5</data>
+</node>
+<node id="100001000000000">
+	<data key="nodename">mut38_4</data>
+</node>
+<node id="1000010000000000">
+	<data key="nodename">mut33_3</data>
+</node>
+<node id="10000100000000000">
+	<data key="nodename">mut34_3</data>
+</node>
+<node id="100001000000000000">
+	<data key="nodename">mut11_2</data>
+</node>
+<node id="1000010000000000000">
+	<data key="nodename">mut16_2</data>
+</node>
+<node id="10000100000000000000">
+	<data key="nodename">mut18_2</data>
+</node>
+<node id="100001000000000000000">
+	<data key="nodename">mut20_2</data>
+</node>
+<edge source="1" target="10"/>
+<edge source="10" target="100"/>
+<edge source="100" target="1000"/>
+<edge source="1000" target="10000"/>
+<edge source="10000" target="100000"/>
+<edge source="100000" target="1000000"/>
+<edge source="1000000" target="10000000"/>
+<edge source="10000000" target="100000000"/>
+<edge source="100000000" target="1000000000"/>
+<edge source="1000000000" target="10000000000"/>
+<edge source="10000000000" target="100000000000"/>
+<edge source="10000000" target="100000001"/>
+<edge source="100000001" target="1000000010"/>
+<edge source="1000000010" target="10000000100"/>
+<edge source="10000000100" target="100000001000"/>
+<edge source="100000001000" target="1000000010000"/>
+<edge source="1000000010000" target="10000000100000"/>
+<edge source="10000000" target="100000002"/>
+<edge source="100000002" target="1000000020"/>
+<edge source="1000000020" target="10000000200"/>
+<edge source="10000000200" target="100000002000"/>
+<edge source="100000002000" target="1000000020000"/>
+<edge source="10000000" target="100000003"/>
+<edge source="100000003" target="1000000030"/>
+<edge source="1000000030" target="10000000300"/>
+<edge source="10000000300" target="100000003000"/>
+<edge source="10000" target="100001"/>
+<edge source="100001" target="1000010"/>
+<edge source="1000010" target="10000100"/>
+<edge source="10000100" target="100001000"/>
+<edge source="100001000" target="1000010000"/>
+<edge source="1000010000" target="10000100000"/>
+<edge source="10000100000" target="100001000000"/>
+<edge source="100001000000" target="1000010000000"/>
+<edge source="1000010000000" target="10000100000000"/>
+<edge source="10000100000000" target="100001000000000"/>
+<edge source="100001000000000" target="1000010000000000"/>
+<edge source="1000010000000000" target="10000100000000000"/>
+<edge source="10000100000000000" target="100001000000000000"/>
+<edge source="100001000000000000" target="1000010000000000000"/>
+<edge source="1000010000000000000" target="10000100000000000000"/>
+<edge source="10000100000000000000" target="100001000000000000000"/>
+</graph>
+</graphml>
