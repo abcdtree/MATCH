@@ -7,9 +7,7 @@ package match;
 import java.util.*;
 import java.lang.*;
 import java.io.*;
-import myscite.ResultQualify;
-import myscite.SciteTree;
-import myscite.AncestorMatrix;
+import myscite.*;
 
 /**
  *
@@ -22,7 +20,7 @@ public class MATCH {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        /*
         SingleCellMatrix scm = SingleCellMatrix.readFromCSV("./testData.csv");
         System.out.println(scm);
         
@@ -36,7 +34,7 @@ public class MATCH {
         System.out.println(scm);
         PartialTree pt = PartialTree.makeATree(scm);
         pt.outputCSV("./testOutput.csv");
-        
+        */
         
         //pt.reduceRepeat(0);
         //pt.outputCSV("./testOutput2.csv");*/
@@ -90,7 +88,53 @@ public class MATCH {
         pt.reduceRepeat(0);
         pt.outputCSV("./right1.csv");*/
         
+        //MATCH 2.0 06132017 Jianshu Zhang
         
+        String inputFile = "./TestData/MatrixTree100/MutMatrix-VAF-SIMU-NUM-0.csv";
+        String outputFile = "./Test1.csv";
+        DataHandle dh = new DataHandle(inputFile);
+        SingleCellMatrix scm = dh.getSCM();
+        //DataMatrix dm = scm.getDataMatrix();
+        
+        //System.out.println(dm.columnSize() + " " + dm.rowSize());
+        
+        BulkSequence bs = dh.getBulk();
+        //VAFMatrix vafm = bs.getVafMatrix(dm.getNameSpace());
+        
+        //System.out.println(vafm.getColumnSize() + " " + vafm.getRowSize());
+        
+        scm.pathSort(bs);
+        scm.commonGeneScoring(0.8);
+        scm.commonRoot();
+        PartialTree pt = PartialTree.makeATree(scm);
+        pt.reduceRepeat(0);
+        
+        AncestorMatrix am = pt.getAncestorMatrix();
+        
+        System.out.println(am.size());
+        
+        VAFMatrix vafm = bs.getVafMatrix(am.getNameSpace());
+        
+        DataMatrix dm = dh.getSCM().getDataMatrix(am.getNameSpace());
+        vafm.updateWithDataMatrix(dm);
+        //am.reArrange(dm.getNameSpace());
+        double alpha = 0.00001;
+        double beta = 0.00001;
+        int repeatLimits = 800000;
+        double proportion = 0.9;
+        
+        MCMC myMcmc = new MCMC(am, dm, vafm, alpha, beta);
+        double finalScore = myMcmc.startMCMCPlus(repeatLimits, 1, proportion);
+        
+        am = myMcmc.getAncestorMatrix();
+        SciteTree st = SciteTree.makeASciteTree(am, am.getNameSpace());
+        
+        st.outputCSV(outputFile);
+        
+        
+        
+        
+ 
         
     }
     

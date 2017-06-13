@@ -7,6 +7,7 @@ package match;
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+import myscite.*;
 /**
  *
  * @author Jianshu
@@ -92,6 +93,29 @@ public class SingleCellMatrix {
             e.printStackTrace();
         }
         return new SingleCellMatrix();
+    }
+    
+    public DataMatrix getDataMatrix(MutationNameSpace mns){
+        System.out.println(this.columnSize);
+        System.out.println(this.rowSize);
+        System.out.println(this.singleCellMatrix.length);
+        int[][] matrix = new int[mns.size()][this.columnSize];
+        ArrayList<String> muts = new ArrayList<String>(Arrays.asList(this.mutations));
+        ArrayList<String> names = mns.getNames();
+        for(int i=0; i < names.size(); i++){
+            int j = muts.indexOf(names.get(i));
+            if(j > -1)
+            {
+                for(int p = 0; p < this.columnSize; p++){
+                    matrix[i][p] = this.singleCellMatrix[j][p];
+                }
+            }
+            else{
+                throw new Error("Mutation Name does not match");
+            }
+        }
+        
+        return new DataMatrix(matrix, mns);
     }
     
     public String toString(){

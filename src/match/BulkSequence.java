@@ -6,6 +6,7 @@
 package match;
 import java.util.*;
 import java.io.*;
+import myscite.*;
 /**
  *
  * @author Jianshu
@@ -70,4 +71,19 @@ public class BulkSequence {
         }
         return output.trim();
     }
+    
+    public VAFMatrix getVafMatrix(MutationNameSpace mns){
+        double[] vafs = new double[mns.size()];
+        ArrayList<String> names = mns.getNames();
+        
+        for(Mutations m: this.myBulk){
+            int i = names.indexOf(m.getName());
+            if(i > -1){
+                vafs[i] = m.getCCF();
+            }
+        }
+        
+        return new VAFMatrix(mns, vafs);
+    }
+    
 }
