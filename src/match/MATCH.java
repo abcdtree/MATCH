@@ -114,9 +114,9 @@ public class MATCH {
         //pt.reduceRepeat(0);
         
         AncestorMatrix am = pt.getAncestorMatrix();
-        for(String s: am.getNameSpace().getNames()){
+        /*for(String s: am.getNameSpace().getNames()){
             System.out.println(s);
-        }
+        }*/
         
         /*System.out.println(am.size());
         

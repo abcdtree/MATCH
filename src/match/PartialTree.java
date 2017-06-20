@@ -39,9 +39,9 @@ public class PartialTree {
         ArrayList<String> nameSpace = this.muts;
         AncestorMatrix mMatrix = new AncestorMatrix(mSize);
         recBuildMatrix(this.root, mMatrix, nameSpace, mSize);
-        System.out.println(muts.size());
-        System.out.println(mMatrix.size());
-        System.out.println(mSize);
+        //System.out.println(muts.size());
+        //System.out.println(mMatrix.size());
+        //System.out.println(mSize);
         mMatrix.setNameSpace(new MutationNameSpace(nameSpace));
         
         return mMatrix;
@@ -105,7 +105,7 @@ public class PartialTree {
     
     public static PartialTree makeATree(SingleCellMatrix scm){
         String[] muts = scm.getMuts();
-        System.out.println("This is the root now: " + muts[0]);
+        //System.out.println("This is the root now: " + muts[0]);
         PartialTree pt = new PartialTree();
         if(muts.length > 0){
             pt.setRoot(new TreeNode(muts[0]));
