@@ -39,9 +39,9 @@ public class PartialTree {
         ArrayList<String> nameSpace = this.muts;
         AncestorMatrix mMatrix = new AncestorMatrix(mSize);
         recBuildMatrix(this.root, mMatrix, nameSpace, mSize);
-        //System.out.println(muts.size());
-        //System.out.println(mMatrix.size());
-        //System.out.println(mSize);
+        System.out.println(muts.size());
+        System.out.println(mMatrix.size());
+        System.out.println(mSize);
         mMatrix.setNameSpace(new MutationNameSpace(nameSpace));
         
         return mMatrix;
@@ -105,9 +105,12 @@ public class PartialTree {
     
     public static PartialTree makeATree(SingleCellMatrix scm){
         String[] muts = scm.getMuts();
+        System.out.println("This is the root now: " + muts[0]);
         PartialTree pt = new PartialTree();
         if(muts.length > 0){
             pt.setRoot(new TreeNode(muts[0]));
+            pt.muts.add(muts[0]);
+            pt.size++;
         }
         else{
             return pt;
@@ -169,6 +172,70 @@ public class PartialTree {
                 level = temp;
             }
         }
+        //method 1
+        //random pick one between the repeat nodes
+        else if(method == 1){
+            this.checkRepeat();
+        }
+    }
+    
+    private void checkRepeat(){
+        boolean noRepeat = false;
+        ArrayList<TreeNode> allNode = new ArrayList<TreeNode>();
+        this.reAddNode(this.root, allNode);
+        while(true){
+            if(!this.findRepeat(allNode)){
+                break;
+            }
+        }
+    }
+    
+    
+    
+    private void reAddNode(TreeNode node, ArrayList<TreeNode> nodes){
+        nodes.add(node);
+        for(TreeNode child: node.getChildren()){
+            this.reAddNode(child, nodes);
+        }
+    }
+    
+    private void removeNode(TreeNode node){
+        if(node == this.root){
+            return;
+        }
+        else{
+            ArrayList<TreeNode> childrens = node.getChildren();
+            TreeNode parent = node.getParent();
+            for(TreeNode child: childrens){
+                parent.addChild(child);
+            }
+        }
+    }
+    
+    private boolean findRepeat(ArrayList<TreeNode> nodes){
+        boolean flag = false;
+        for(int i = 0; i < nodes.size(); i++){
+            for(int j = i+1; j < nodes.size(); j++){
+                if(nodes.get(i).getName() == nodes.get(j).getName()){
+                    double k = (new Random()).nextDouble();
+                    if(k < 0.5 && i != 0){
+                        this.removeNode(nodes.get(i));
+                        nodes.remove(i);                       
+                    }
+                    else{
+                        this.removeNode(nodes.get(j));
+                        nodes.remove(j);
+                    }
+                    flag = true;
+                    break;
+                }
+                
+            }
+            if(flag){
+                break;
+            }
+        }
+        return flag;
     }
     
     private void checkNode(TreeNode tn, ArrayList<String> muts, ArrayList<TreeNode> level){

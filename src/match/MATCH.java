@@ -91,9 +91,10 @@ public class MATCH {
         //MATCH 2.0 06132017 Jianshu Zhang
         
         String inputFile = "./TestData/MatrixTree100/MutMatrix-VAF-SIMU-NUM-0.csv";
-        String outputFile = "./Test1.csv";
+        String outputFile = "./Test3.csv";
         DataHandle dh = new DataHandle(inputFile);
         SingleCellMatrix scm = dh.getSCM();
+        
         //DataMatrix dm = scm.getDataMatrix();
         
         //System.out.println(dm.columnSize() + " " + dm.rowSize());
@@ -105,13 +106,19 @@ public class MATCH {
         
         scm.pathSort(bs);
         scm.commonGeneScoring(0.8);
+        
         scm.commonRoot();
+        
         PartialTree pt = PartialTree.makeATree(scm);
-        pt.reduceRepeat(0);
+        
+        //pt.reduceRepeat(0);
         
         AncestorMatrix am = pt.getAncestorMatrix();
+        for(String s: am.getNameSpace().getNames()){
+            System.out.println(s);
+        }
         
-        System.out.println(am.size());
+        /*System.out.println(am.size());
         
         VAFMatrix vafm = bs.getVafMatrix(am.getNameSpace());
         
@@ -126,7 +133,7 @@ public class MATCH {
         MCMC myMcmc = new MCMC(am, dm, vafm, alpha, beta);
         double finalScore = myMcmc.startMCMCPlus(repeatLimits, 1, proportion);
         
-        am = myMcmc.getAncestorMatrix();
+        am = myMcmc.getAncestorMatrix();*/
         SciteTree st = SciteTree.makeASciteTree(am, am.getNameSpace());
         
         st.outputCSV(outputFile);
