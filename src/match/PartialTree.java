@@ -188,6 +188,11 @@ public class PartialTree {
                 break;
             }
         }
+        ArrayList<String> names = new ArrayList<String>();
+        for(TreeNode node: allNode){
+            names.add(node.getName());
+        }
+        this.muts = names;
     }
     
     
@@ -209,6 +214,8 @@ public class PartialTree {
             for(TreeNode child: childrens){
                 parent.addChild(child);
             }
+            parent.removeChild(node);
+            this.size--;
         }
     }
     

@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE graphml><graphml>
+<key id="nodename" for="node" attr.name="nodename" attr.type="string"/>
+<graph id="G" edgedefault="directed">
+<node id="1">
+	<data key="nodename">Root</data>
+</node>
+<node id="10">
+	<data key="nodename">CNTNAP3 84</data>
+</node>
+<node id="100">
+	<data key="nodename">COPS6 46</data>
+</node>
+<node id="1000">
+	<data key="nodename">UPK1B 42</data>
+</node>
+<node id="10000">
+	<data key="nodename">VDAC1 40</data>
+</node>
+<node id="100000">
+	<data key="nodename">MAST1 38</data>
+</node>
+<node id="101">
+	<data key="nodename">DCTN3 78</data>
+</node>
+<node id="1010">
+	<data key="nodename">ITIH1_1 53</data>
+</node>
+<node id="10100">
+	<data key="nodename">ITIH1 45</data>
+</node>
+<node id="101000">
+	<data key="nodename">UGDH_1 40</data>
+</node>
+<node id="1010000">
+	<data key="nodename">MBD4 33</data>
+</node>
+<node id="10100000">
+	<data key="nodename">CHURC1-FNTB 31</data>
+</node>
+<node id="1011">
+	<data key="nodename">SP110 75</data>
+</node>
+<node id="10110">
+	<data key="nodename">NoRecordGene_2 56</data>
+</node>
+<node id="101100">
+	<data key="nodename">EPS8L3 53</data>
+</node>
+<node id="1011000">
+	<data key="nodename">POLR2A 52</data>
+</node>
+<node id="10110000">
+	<data key="nodename">DISP2 49</data>
+</node>
+<node id="101100000">
+	<data key="nodename">CAMTA2_1 46</data>
+</node>
+<node id="1011000000">
+	<data key="nodename">LNX2 40</data>
+</node>
+<node id="10110000000">
+	<data key="nodename">NIPBL 39</data>
+</node>
+<node id="101100000000">
+	<data key="nodename">RAB3GAP2 38</data>
+</node>
+<node id="1011000000000">
+	<data key="nodename">C3orf15 37</data>
+</node>
+<node id="10110000000000">
+	<data key="nodename">TTLL7 36</data>
+</node>
+<node id="101100000000000">
+	<data key="nodename">PRKCG 35</data>
+</node>
+<node id="1011000000000000">
+	<data key="nodename">KIAA1958 28</data>
+</node>
+<node id="10110000000000000">
+	<data key="nodename">ZNF502_1 21</data>
+</node>
+<node id="101100000000000000">
+	<data key="nodename">ABCA9 16</data>
+</node>
+<node id="1011000000000000000">
+	<data key="nodename">ZNF502 15</data>
+</node>
+<node id="101101">
+	<data key="nodename">ITIH1_1 53</data>
+</node>
+<node id="1011010">
+	<data key="nodename">EIF2S2 48</data>
+</node>
+<node id="10110100">
+	<data key="nodename">ITIH1 45</data>
+</node>
+<node id="101101000">
+	<data key="nodename">TKTL2 41</data>
+</node>
+<node id="1011010000">
+	<data key="nodename">ZNF502_1 21</data>
+</node>
+<node id="10110100000">
+	<data key="nodename">COL6A3 17</data>
+</node>
+<node id="101101000000">
+	<data key="nodename">ZNF502 15</data>
+</node>
+<node id="1011010000000">
+	<data key="nodename">RPL3 15</data>
+</node>
+<node id="10110100000000">
+	<data key="nodename">RPL3_1 13</data>
+</node>
+<node id="101101000000000">
+	<data key="nodename">HMSD 12</data>
+</node>
+<node id="101102">
+	<data key="nodename">PRDM9 52</data>
+</node>
+<node id="1011020">
+	<data key="nodename">EIF2S2 48</data>
+</node>
+<node id="10110200">
+	<data key="nodename">CAMTA2_1 46</data>
+</node>
+<node id="101102000">
+	<data key="nodename">NSD1 44</data>
+</node>
+<node id="1011020000">
+	<data key="nodename">CFTR 44</data>
+</node>
+<node id="10110200000">
+	<data key="nodename">UGDH 43</data>
+</node>
+<node id="101102000000">
+	<data key="nodename">UGDH_1 40</data>
+</node>
+<node id="1011020000000">
+	<data key="nodename">LNX2 40</data>
+</node>
+<node id="10110200000000">
+	<data key="nodename">DAND5_1 39</data>
+</node>
+<node id="101102000000000">
+	<data key="nodename">KIR3DL1 38</data>
+</node>
+<node id="1011020000000000">
+	<data key="nodename">CLCC1 36</data>
+</node>
+<node id="10110200000000000">
+	<data key="nodename">PRKCG 35</data>
+</node>
+<node id="10111">
+	<data key="nodename">TMBIM4 60</data>
+</node>
+<node id="101110">
+	<data key="nodename">UPK1B 42</data>
+</node>
+<node id="1011100">
+	<data key="nodename">AADACL4 42</data>
+</node>
+<node id="10111000">
+	<data key="nodename">USP37 16</data>
+</node>
+<node id="101110000">
+	<data key="nodename">BCR 5</data>
+</node>
+<node id="101111">
+	<data key="nodename">NPC1L1 51</data>
+</node>
+<node id="1011110">
+	<data key="nodename">EIF2S2 48</data>
+</node>
+<node id="10111100">
+	<data key="nodename">BMPR1A 46</data>
+</node>
+<node id="101111000">
+	<data key="nodename">COPS6_1 36</data>
+</node>
+<node id="1011110000">
+	<data key="nodename">PSG6 5</data>
+</node>
+<node id="10112">
+	<data key="nodename">AAGAB 41</data>
+</node>
+<node id="101120">
+	<data key="nodename">USP6 40</data>
+</node>
+<node id="1011200">
+	<data key="nodename">RAB3GAP2 38</data>
+</node>
+<node id="10112000">
+	<data key="nodename">USP6_1 38</data>
+</node>
+<node id="101120000">
+	<data key="nodename">CLCC1 36</data>
+</node>
+<node id="1011200000">
+	<data key="nodename">SAMD15 16</data>
+</node>
+<node id="10112000000">
+	<data key="nodename">USP37 16</data>
+</node>
+<node id="101120000000">
+	<data key="nodename">SAMD15_1 9</data>
+</node>
+<node id="101121">
+	<data key="nodename">SIPA1L3 33</data>
+</node>
+<node id="1011210">
+	<data key="nodename">MED12L 24</data>
+</node>
+<node id="10112100">
+	<data key="nodename">ABCA9 16</data>
+</node>
+<node id="101121000">
+	<data key="nodename">ABCA9_1 14</data>
+</node>
+<node id="1011210000">
+	<data key="nodename">HMSD 12</data>
+</node>
+<node id="10113">
+	<data key="nodename">POLR2A 52</data>
+</node>
+<node id="101130">
+	<data key="nodename">CAMTA2_1 46</data>
+</node>
+<node id="1011300">
+	<data key="nodename">MT1X 44</data>
+</node>
+<node id="10113000">
+	<data key="nodename">AADACL4 42</data>
+</node>
+<node id="101130000">
+	<data key="nodename">CLCC1 36</data>
+</node>
+<node id="1011300000">
+	<data key="nodename">CAMTA2 33</data>
+</node>
+<node id="10114">
+	<data key="nodename">AARS 43</data>
+</node>
+<node id="101140">
+	<data key="nodename">AARS_1 42</data>
+</node>
+<node id="1011400">
+	<data key="nodename">LNX2 40</data>
+</node>
+<node id="10114000">
+	<data key="nodename">TTLL7 36</data>
+</node>
+<node id="101140000">
+	<data key="nodename">NFATC3 30</data>
+</node>
+<node id="1011400000">
+	<data key="nodename">KIAA1958_1 28</data>
+</node>
+<node id="10114000000">
+	<data key="nodename">KIAA1958 28</data>
+</node>
+<node id="101140000000">
+	<data key="nodename">ZNF502_1 21</data>
+</node>
+<node id="1011400000000">
+	<data key="nodename">ZNF502 15</data>
+</node>
+<node id="10114000000000">
+	<data key="nodename">PSIP1 13</data>
+</node>
+<node id="101140000000000">
+	<data key="nodename">NFATC3_1 12</data>
+</node>
+<node id="10115">
+	<data key="nodename">RAP1GDS1 64</data>
+</node>
+<node id="101150">
+	<data key="nodename">MTOR 55</data>
+</node>
+<node id="1011500">
+	<data key="nodename">EPS8L3 53</data>
+</node>
+<node id="10115000">
+	<data key="nodename">C12orf40 49</data>
+</node>
+<node id="101150000">
+	<data key="nodename">DISP2 49</data>
+</node>
+<node id="1011500000">
+	<data key="nodename">MT1X 44</data>
+</node>
+<node id="10115000000">
+	<data key="nodename">CHD6 44</data>
+</node>
+<node id="101150000000">
+	<data key="nodename">AAGAB 41</data>
+</node>
+<node id="1011500000000">
+	<data key="nodename">ZNF502_1 21</data>
+</node>
+<node id="10115000000000">
+	<data key="nodename">ZNF502 15</data>
+</node>
+<node id="101150000000000">
+	<data key="nodename">HMSD 12</data>
+</node>
+<node id="101151">
+	<data key="nodename">CIT 60</data>
+</node>
+<node id="1011510">
+	<data key="nodename">NoRecordGene_2 56</data>
+</node>
+<node id="10115100">
+	<data key="nodename">USP6 40</data>
+</node>
+<node id="101151000">
+	<data key="nodename">USP6_1 38</data>
+</node>
+<node id="1011510000">
+	<data key="nodename">TARBP1 37</data>
+</node>
+<node id="10115100000">
+	<data key="nodename">PRKCG 35</data>
+</node>
+<node id="101151000000">
+	<data key="nodename">CHURC1-FNTB 31</data>
+</node>
+<node id="1011510000000">
+	<data key="nodename">ZNF502_1 21</data>
+</node>
+<node id="101152">
+	<data key="nodename">TMBIM4 60</data>
+</node>
+<node id="1011520">
+	<data key="nodename">ITIH1_1 53</data>
+</node>
+<node id="10115200">
+	<data key="nodename">C12orf40 49</data>
+</node>
+<node id="101152000">
+	<data key="nodename">NT5C2 49</data>
+</node>
+<node id="1011520000">
+	<data key="nodename">EIF2S2 48</data>
+</node>
+<node id="10115200000">
+	<data key="nodename">CHUK 47</data>
+</node>
+<node id="101152000000">
+	<data key="nodename">BMPR1A 46</data>
+</node>
+<node id="1011520000000">
+	<data key="nodename">COPS6 46</data>
+</node>
+<node id="10115200000000">
+	<data key="nodename">ANXA4 46</data>
+</node>
+<node id="101152000000000">
+	<data key="nodename">CHD6 44</data>
+</node>
+<node id="1011520000000000">
+	<data key="nodename">USP6 40</data>
+</node>
+<node id="10115200000000000">
+	<data key="nodename">C12orf57 39</data>
+</node>
+<node id="101152000000000000">
+	<data key="nodename">USP6_1 38</data>
+</node>
+<node id="1011520000000000000">
+	<data key="nodename">CAMTA2 33</data>
+</node>
+<node id="10115200000000000000">
+	<data key="nodename">NOP56_1 16</data>
+</node>
+<node id="101152000000000000000">
+	<data key="nodename">PSIP1 13</data>
+</node>
+<node id="1011520000000001">
+	<data key="nodename">UGDH 43</data>
+</node>
+<node id="10115200000000010">
+	<data key="nodename">UPK1B 42</data>
+</node>
+<node id="101152000000000100">
+	<data key="nodename">AADACL4 42</data>
+</node>
+<node id="1011520000000001000">
+	<data key="nodename">FERMT1 42</data>
+</node>
+<node id="10115200000000010000">
+	<data key="nodename">IGDCC3 42</data>
+</node>
+<node id="101152000000000100000">
+	<data key="nodename">UGDH_1 40</data>
+</node>
+<node id="1011520000000001000000">
+	<data key="nodename">TTLL7 36</data>
+</node>
+<node id="10115200000000010000000">
+	<data key="nodename">MED12L 24</data>
+</node>
+<node id="101152000000000100000000">
+	<data key="nodename">ZNF502_1 21</data>
+</node>
+<node id="1011520000000001000000000">
+	<data key="nodename">ZNF502 15</data>
+</node>
+<node id="101153">
+	<data key="nodename">CENPH 56</data>
+</node>
+<node id="1011530">
+	<data key="nodename">PTCD3 56</data>
+</node>
+<node id="10116">
+	<data key="nodename">CIT 60</data>
+</node>
+<node id="101160">
+	<data key="nodename">EPS8L3 53</data>
+</node>
+<node id="1011600">
+	<data key="nodename">NPC1L1 51</data>
+</node>
+<node id="10116000">
+	<data key="nodename">USP4 31</data>
+</node>
+<node id="1011601">
+	<data key="nodename">ITIH1 45</data>
+</node>
+<node id="10116010">
+	<data key="nodename">AARS 43</data>
+</node>
+<node id="101160100">
+	<data key="nodename">UPK1B 42</data>
+</node>
+<node id="1011601000">
+	<data key="nodename">AARS_1 42</data>
+</node>
+<node id="10116010000">
+	<data key="nodename">NIPBL 39</data>
+</node>
+<node id="101160100000">
+	<data key="nodename">MAST1 38</data>
+</node>
+<node id="1011601000000">
+	<data key="nodename">XPO5 30</data>
+</node>
+<node id="10117">
+	<data key="nodename">USP37 16</data>
+</node>
+<node id="10118">
+	<data key="nodename">PTCD3 56</data>
+</node>
+<node id="101180">
+	<data key="nodename">EP400 56</data>
+</node>
+<node id="1011800">
+	<data key="nodename">AQP11 53</data>
+</node>
+<node id="10118000">
+	<data key="nodename">ITIH1_1 53</data>
+</node>
+<node id="101180000">
+	<data key="nodename">POLR2A 52</data>
+</node>
+<node id="1011800000">
+	<data key="nodename">NPC1L1 51</data>
+</node>
+<node id="10118000000">
+	<data key="nodename">HECTD1 47</data>
+</node>
+<node id="101180000000">
+	<data key="nodename">ITIH1 45</data>
+</node>
+<node id="1011800000000">
+	<data key="nodename">HECTD1_1 45</data>
+</node>
+<node id="10118000000000">
+	<data key="nodename">FERMT1 42</data>
+</node>
+<node id="101180000000000">
+	<data key="nodename">TKTL2 41</data>
+</node>
+<node id="1011800000000000">
+	<data key="nodename">NIPBL 39</data>
+</node>
+<node id="10118000000000000">
+	<data key="nodename">RAB3GAP2 38</data>
+</node>
+<node id="101180000000000000">
+	<data key="nodename">C3orf15 37</data>
+</node>
+<node id="1011800000000000000">
+	<data key="nodename">DHX57 35</data>
+</node>
+<node id="10118000000000000000">
+	<data key="nodename">COL6A3 17</data>
+</node>
+<node id="101180000000000000000">
+	<data key="nodename">PSIP1 13</data>
+</node>
+<node id="10118000000001">
+	<data key="nodename">UGDH 43</data>
+</node>
+<node id="101180000000010">
+	<data key="nodename">UGDH_1 40</data>
+</node>
+<node id="1011800000000100">
+	<data key="nodename">MBD4 33</data>
+</node>
+<node id="10118000000001000">
+	<data key="nodename">RGPD1_1 28</data>
+</node>
+<node id="10119">
+	<data key="nodename">CAMTA2_1 46</data>
+</node>
+<node id="101190">
+	<data key="nodename">C12orf57 39</data>
+</node>
+<node id="101110">
+	<data key="nodename">KIAA1949 56</data>
+</node>
+<node id="1011100">
+	<data key="nodename">BRD8 54</data>
+</node>
+<node id="10111000">
+	<data key="nodename">ITIH1_1 53</data>
+</node>
+<node id="101110000">
+	<data key="nodename">ITIH1 45</data>
+</node>
+<node id="1011100000">
+	<data key="nodename">FERMT1 42</data>
+</node>
+<node id="10111000000">
+	<data key="nodename">IGDCC3 42</data>
+</node>
+<node id="101110000000">
+	<data key="nodename">NFATC3 30</data>
+</node>
+<node id="1011100000000">
+	<data key="nodename">MED12L 24</data>
+</node>
+<node id="10111000000000">
+	<data key="nodename">COL6A3 17</data>
+</node>
+<node id="101110000000000">
+	<data key="nodename">NFATC3_2 17</data>
+</node>
+<node id="1011100000000000">
+	<data key="nodename">PSIP1 13</data>
+</node>
+<node id="10111000000000000">
+	<data key="nodename">NFATC3_1 12</data>
+</node>
+<node id="101111">
+	<data key="nodename">ITIH1_1 53</data>
+</node>
+<node id="1011110">
+	<data key="nodename">ITIH1 45</data>
+</node>
+<node id="10111100">
+	<data key="nodename">NSD1 44</data>
+</node>
+<node id="101111000">
+	<data key="nodename">UGDH 43</data>
+</node>
+<node id="101112">
+	<data key="nodename">ITIH1 45</data>
+</node>
+<node id="101113">
+	<data key="nodename">LARP4B 49</data>
+</node>
+<node id="1011130">
+	<data key="nodename">TTLL7 36</data>
+</node>
+<node id="10111300">
+	<data key="nodename">PRKCG 35</data>
+</node>
+<node id="101113000">
+	<data key="nodename">USP37 16</data>
+</node>
+<node id="1012">
+	<data key="nodename">CIT 60</data>
+</node>
+<node id="10120">
+	<data key="nodename">ITIH1_1 53</data>
+</node>
+<node id="101200">
+	<data key="nodename">ITIH1 45</data>
+</node>
+<node id="1012000">
+	<data key="nodename">MT1X 44</data>
+</node>
+<node id="10120000">
+	<data key="nodename">AARS_1 42</data>
+</node>
+<node id="101200000">
+	<data key="nodename">TKTL2 41</data>
+</node>
+<node id="1012000000">
+	<data key="nodename">NIPBL 39</data>
+</node>
+<node id="10120000000">
+	<data key="nodename">C3orf15 37</data>
+</node>
+<node id="101200000000">
+	<data key="nodename">DHX57 35</data>
+</node>
+<node id="1012000000000">
+	<data key="nodename">C10orf27 28</data>
+</node>
+<node id="10120000000000">
+	<data key="nodename">RFPL2 3</data>
+</node>
+<node id="1013">
+	<data key="nodename">ITIH1 45</data>
+</node>
+<node id="10130">
+	<data key="nodename">IGDCC3 42</data>
+</node>
+<node id="101300">
+	<data key="nodename">ABCA9 16</data>
+</node>
+<node id="1013000">
+	<data key="nodename">ABCA9_1 14</data>
+</node>
+<node id="1014">
+	<data key="nodename">CENPH 56</data>
+</node>
+<node id="10140">
+	<data key="nodename">MTOR 55</data>
+</node>
+<node id="101400">
+	<data key="nodename">PRDM9 52</data>
+</node>
+<node id="1014000">
+	<data key="nodename">C12orf40 49</data>
+</node>
+<node id="10140000">
+	<data key="nodename">NT5C2 49</data>
+</node>
+<node id="101400000">
+	<data key="nodename">HECTD1 47</data>
+</node>
+<node id="1014000000">
+	<data key="nodename">BMPR1A 46</data>
+</node>
+<node id="10140000000">
+	<data key="nodename">ANXA4 46</data>
+</node>
+<node id="101400000000">
+	<data key="nodename">CAMTA2_1 46</data>
+</node>
+<node id="1014000000000">
+	<data key="nodename">HECTD1_1 45</data>
+</node>
+<node id="10140000000000">
+	<data key="nodename">CHD6 44</data>
+</node>
+<node id="101400000000000">
+	<data key="nodename">IGDCC3 42</data>
+</node>
+<node id="1014000000000000">
+	<data key="nodename">KIR3DL1 38</data>
+</node>
+<node id="10140000000000000">
+	<data key="nodename">CLCC1 36</data>
+</node>
+<node id="101400000000000000">
+	<data key="nodename">PANX3 35</data>
+</node>
+<node id="1014000000000000000">
+	<data key="nodename">XPO5_1 31</data>
+</node>
+<node id="10140000000000000000">
+	<data key="nodename">XPO5 30</data>
+</node>
+<node id="101400000000000000000">
+	<data key="nodename">CYP4A11 15</data>
+</node>
+<node id="1014000000000000000000">
+	<data key="nodename">NOP56 14</data>
+</node>
+<node id="10140000000000000000000">
+	<data key="nodename">PSIP1 13</data>
+</node>
+<node id="101400000000000000000000">
+	<data key="nodename">AP3S1 11</data>
+</node>
+<node id="1015">
+	<data key="nodename">TMBIM4 60</data>
+</node>
+<node id="10150">
+	<data key="nodename">EP400 56</data>
+</node>
+<node id="101500">
+	<data key="nodename">AQP11 53</data>
+</node>
+<node id="1015000">
+	<data key="nodename">ITIH1_1 53</data>
+</node>
+<node id="10150000">
+	<data key="nodename">NPC1L1 51</data>
+</node>
+<node id="101500000">
+	<data key="nodename">HECTD1 47</data>
+</node>
+<node id="1015000000">
+	<data key="nodename">ITIH1 45</data>
+</node>
+<node id="10150000000">
+	<data key="nodename">HECTD1_1 45</data>
+</node>
+<node id="101500000000">
+	<data key="nodename">ARHGAP11A 40</data>
+</node>
+<node id="101501">
+	<data key="nodename">PRDM9 52</data>
+</node>
+<node id="1015010">
+	<data key="nodename">LARP4B 49</data>
+</node>
+<node id="10150100">
+	<data key="nodename">HECTD1 47</data>
+</node>
+<node id="101501000">
+	<data key="nodename">NSD1 44</data>
+</node>
+<node id="1015010000">
+	<data key="nodename">TKTL2 41</data>
+</node>
+<node id="10150100000">
+	<data key="nodename">UGDH_1 40</data>
+</node>
+<node id="101501000000">
+	<data key="nodename">USP6 40</data>
+</node>
+<node id="1015010000000">
+	<data key="nodename">NIPBL 39</data>
+</node>
+<node id="10150100000000">
+	<data key="nodename">NEUROD4 39</data>
+</node>
+<node id="101501000000000">
+	<data key="nodename">USP6_1 38</data>
+</node>
+<node id="1015010000000000">
+	<data key="nodename">COPS6_1 36</data>
+</node>
+<node id="10150100000000000">
+	<data key="nodename">SIPA1L3 33</data>
+</node>
+<node id="1016">
+	<data key="nodename">PRDM9 52</data>
+</node>
+<node id="10160">
+	<data key="nodename">VAMP3 22</data>
+</node>
+<node id="1017">
+	<data key="nodename">CHD6 44</data>
+</node>
+<node id="10170">
+	<data key="nodename">FERMT1 42</data>
+</node>
+<node id="101700">
+	<data key="nodename">AARS_1 42</data>
+</node>
+<node id="1017000">
+	<data key="nodename">ARHGAP11A 40</data>
+</node>
+<node id="10170000">
+	<data key="nodename">VDAC1 40</data>
+</node>
+<node id="101700000">
+	<data key="nodename">PANX3 35</data>
+</node>
+<node id="1017000000">
+	<data key="nodename">MBD4 33</data>
+</node>
+<node id="10170000000">
+	<data key="nodename">USP4 31</data>
+</node>
+<node id="102">
+	<data key="nodename">RAP1GDS1 64</data>
+</node>
+<node id="1020">
+	<data key="nodename">PRKCG 35</data>
+</node>
+<node id="1021">
+	<data key="nodename">CIT 60</data>
+</node>
+<node id="10210">
+	<data key="nodename">MTOR 55</data>
+</node>
+<node id="102100">
+	<data key="nodename">FNDC3B 46</data>
+</node>
+<node id="1021000">
+	<data key="nodename">TTLL7 36</data>
+</node>
+<node id="10210000">
+	<data key="nodename">EIF2D 34</data>
+</node>
+<node id="102100000">
+	<data key="nodename">C10orf27 28</data>
+</node>
+<node id="1021000000">
+	<data key="nodename">SAMD15 16</data>
+</node>
+<node id="10210000000">
+	<data key="nodename">CYP4A11 15</data>
+</node>
+<node id="1022">
+	<data key="nodename">KIAA1949 56</data>
+</node>
+<node id="10220">
+	<data key="nodename">ITIH1_1 53</data>
+</node>
+<node id="102200">
+	<data key="nodename">FNDC3B 46</data>
+</node>
+<node id="1022000">
+	<data key="nodename">TKTL2 41</data>
+</node>
+<node id="10220000">
+	<data key="nodename">C12orf57 39</data>
+</node>
+<node id="102200000">
+	<data key="nodename">MAST1 38</data>
+</node>
+<node id="1022000000">
+	<data key="nodename">TTLL7 36</data>
+</node>
+<node id="10220000000">
+	<data key="nodename">PRKCG 35</data>
+</node>
+<node id="102200000000">
+	<data key="nodename">USP4 31</data>
+</node>
+<node id="103">
+	<data key="nodename">SP110 75</data>
+</node>
+<node id="1030">
+	<data key="nodename">FNDC3B 46</data>
+</node>
+<node id="10300">
+	<data key="nodename">COPS6 46</data>
+</node>
+<node id="103000">
+	<data key="nodename">COPS6_1 36</data>
+</node>
+<node id="1031">
+	<data key="nodename">NoRecordGene_2 56</data>
+</node>
+<node id="10310">
+	<data key="nodename">EPS8L3 53</data>
+</node>
+<node id="103100">
+	<data key="nodename">POLR2A 52</data>
+</node>
+<node id="1031000">
+	<data key="nodename">DISP2 49</data>
+</node>
+<node id="10310000">
+	<data key="nodename">CAMTA2_1 46</data>
+</node>
+<node id="103100000">
+	<data key="nodename">LNX2 40</data>
+</node>
+<node id="1031000000">
+	<data key="nodename">NIPBL 39</data>
+</node>
+<node id="10310000000">
+	<data key="nodename">RAB3GAP2 38</data>
+</node>
+<node id="103100000000">
+	<data key="nodename">C3orf15 37</data>
+</node>
+<node id="1031000000000">
+	<data key="nodename">TTLL7 36</data>
+</node>
+<node id="10310000000000">
+	<data key="nodename">PSIP1 13</data>
+</node>
+<node id="103100000000000">
+	<data key="nodename">METTL14 6</data>
+</node>
+<node id="1032">
+	<data key="nodename">CIT 60</data>
+</node>
+<node id="10320">
+	<data key="nodename">BRD8 54</data>
+</node>
+<node id="103200">
+	<data key="nodename">ITIH1_1 53</data>
+</node>
+<node id="1032000">
+	<data key="nodename">LARP4B 49</data>
+</node>
+<node id="10320000">
+	<data key="nodename">ITIH1 45</data>
+</node>
+<node id="103200000">
+	<data key="nodename">CHD6 44</data>
+</node>
+<node id="1032000000">
+	<data key="nodename">AAGAB 41</data>
+</node>
+<node id="10320000000">
+	<data key="nodename">MAST1 38</data>
+</node>
+<node id="103200000000">
+	<data key="nodename">CPSF3 13</data>
+</node>
+<node id="10321">
+	<data key="nodename">KIAA1949 56</data>
+</node>
+<node id="103210">
+	<data key="nodename">UGDH 43</data>
+</node>
+<node id="1032100">
+	<data key="nodename">UPK1B 42</data>
+</node>
+<node id="10321000">
+	<data key="nodename">TKTL2 41</data>
+</node>
+<node id="103210000">
+	<data key="nodename">DHX57 35</data>
+</node>
+<node id="104">
+	<data key="nodename">USP4 31</data>
+</node>
+<node id="11">
+	<data key="nodename">SP110 75</data>
+</node>
+<node id="110">
+	<data key="nodename">TMBIM4 60</data>
+</node>
+<node id="1100">
+	<data key="nodename">BRD8 54</data>
+</node>
+<node id="11000">
+	<data key="nodename">C12orf40 49</data>
+</node>
+<node id="110000">
+	<data key="nodename">AARS 43</data>
+</node>
+<node id="1100000">
+	<data key="nodename">PSG6 5</data>
+</node>
+<edge source="1" target="10"/>
+<edge source="10" target="100"/>
+<edge source="100" target="1000"/>
+<edge source="1000" target="10000"/>
+<edge source="10000" target="100000"/>
+<edge source="10" target="101"/>
+<edge source="101" target="1010"/>
+<edge source="1010" target="10100"/>
+<edge source="10100" target="101000"/>
+<edge source="101000" target="1010000"/>
+<edge source="1010000" target="10100000"/>
+<edge source="101" target="1011"/>
+<edge source="1011" target="10110"/>
+<edge source="10110" target="101100"/>
+<edge source="101100" target="1011000"/>
+<edge source="1011000" target="10110000"/>
+<edge source="10110000" target="101100000"/>
+<edge source="101100000" target="1011000000"/>
+<edge source="1011000000" target="10110000000"/>
+<edge source="10110000000" target="101100000000"/>
+<edge source="101100000000" target="1011000000000"/>
+<edge source="1011000000000" target="10110000000000"/>
+<edge source="10110000000000" target="101100000000000"/>
+<edge source="101100000000000" target="1011000000000000"/>
+<edge source="1011000000000000" target="10110000000000000"/>
+<edge source="10110000000000000" target="101100000000000000"/>
+<edge source="101100000000000000" target="1011000000000000000"/>
+<edge source="10110" target="101101"/>
+<edge source="101101" target="1011010"/>
+<edge source="1011010" target="10110100"/>
+<edge source="10110100" target="101101000"/>
+<edge source="101101000" target="1011010000"/>
+<edge source="1011010000" target="10110100000"/>
+<edge source="10110100000" target="101101000000"/>
+<edge source="101101000000" target="1011010000000"/>
+<edge source="1011010000000" target="10110100000000"/>
+<edge source="10110100000000" target="101101000000000"/>
+<edge source="10110" target="101102"/>
+<edge source="101102" target="1011020"/>
+<edge source="1011020" target="10110200"/>
+<edge source="10110200" target="101102000"/>
+<edge source="101102000" target="1011020000"/>
+<edge source="1011020000" target="10110200000"/>
+<edge source="10110200000" target="101102000000"/>
+<edge source="101102000000" target="1011020000000"/>
+<edge source="1011020000000" target="10110200000000"/>
+<edge source="10110200000000" target="101102000000000"/>
+<edge source="101102000000000" target="1011020000000000"/>
+<edge source="1011020000000000" target="10110200000000000"/>
+<edge source="1011" target="10111"/>
+<edge source="10111" target="101110"/>
+<edge source="101110" target="1011100"/>
+<edge source="1011100" target="10111000"/>
+<edge source="10111000" target="101110000"/>
+<edge source="10111" target="101111"/>
+<edge source="101111" target="1011110"/>
+<edge source="1011110" target="10111100"/>
+<edge source="10111100" target="101111000"/>
+<edge source="101111000" target="1011110000"/>
+<edge source="1011" target="10112"/>
+<edge source="10112" target="101120"/>
+<edge source="101120" target="1011200"/>
+<edge source="1011200" target="10112000"/>
+<edge source="10112000" target="101120000"/>
+<edge source="101120000" target="1011200000"/>
+<edge source="1011200000" target="10112000000"/>
+<edge source="10112000000" target="101120000000"/>
+<edge source="10112" target="101121"/>
+<edge source="101121" target="1011210"/>
+<edge source="1011210" target="10112100"/>
+<edge source="10112100" target="101121000"/>
+<edge source="101121000" target="1011210000"/>
+<edge source="1011" target="10113"/>
+<edge source="10113" target="101130"/>
+<edge source="101130" target="1011300"/>
+<edge source="1011300" target="10113000"/>
+<edge source="10113000" target="101130000"/>
+<edge source="101130000" target="1011300000"/>
+<edge source="1011" target="10114"/>
+<edge source="10114" target="101140"/>
+<edge source="101140" target="1011400"/>
+<edge source="1011400" target="10114000"/>
+<edge source="10114000" target="101140000"/>
+<edge source="101140000" target="1011400000"/>
+<edge source="1011400000" target="10114000000"/>
+<edge source="10114000000" target="101140000000"/>
+<edge source="101140000000" target="1011400000000"/>
+<edge source="1011400000000" target="10114000000000"/>
+<edge source="10114000000000" target="101140000000000"/>
+<edge source="1011" target="10115"/>
+<edge source="10115" target="101150"/>
+<edge source="101150" target="1011500"/>
+<edge source="1011500" target="10115000"/>
+<edge source="10115000" target="101150000"/>
+<edge source="101150000" target="1011500000"/>
+<edge source="1011500000" target="10115000000"/>
+<edge source="10115000000" target="101150000000"/>
+<edge source="101150000000" target="1011500000000"/>
+<edge source="1011500000000" target="10115000000000"/>
+<edge source="10115000000000" target="101150000000000"/>
+<edge source="10115" target="101151"/>
+<edge source="101151" target="1011510"/>
+<edge source="1011510" target="10115100"/>
+<edge source="10115100" target="101151000"/>
+<edge source="101151000" target="1011510000"/>
+<edge source="1011510000" target="10115100000"/>
+<edge source="10115100000" target="101151000000"/>
+<edge source="101151000000" target="1011510000000"/>
+<edge source="10115" target="101152"/>
+<edge source="101152" target="1011520"/>
+<edge source="1011520" target="10115200"/>
+<edge source="10115200" target="101152000"/>
+<edge source="101152000" target="1011520000"/>
+<edge source="1011520000" target="10115200000"/>
+<edge source="10115200000" target="101152000000"/>
+<edge source="101152000000" target="1011520000000"/>
+<edge source="1011520000000" target="10115200000000"/>
+<edge source="10115200000000" target="101152000000000"/>
+<edge source="101152000000000" target="1011520000000000"/>
+<edge source="1011520000000000" target="10115200000000000"/>
+<edge source="10115200000000000" target="101152000000000000"/>
+<edge source="101152000000000000" target="1011520000000000000"/>
+<edge source="1011520000000000000" target="10115200000000000000"/>
+<edge source="10115200000000000000" target="101152000000000000000"/>
+<edge source="101152000000000" target="1011520000000001"/>
+<edge source="1011520000000001" target="10115200000000010"/>
+<edge source="10115200000000010" target="101152000000000100"/>
+<edge source="101152000000000100" target="1011520000000001000"/>
+<edge source="1011520000000001000" target="10115200000000010000"/>
+<edge source="10115200000000010000" target="101152000000000100000"/>
+<edge source="101152000000000100000" target="1011520000000001000000"/>
+<edge source="1011520000000001000000" target="10115200000000010000000"/>
+<edge source="10115200000000010000000" target="101152000000000100000000"/>
+<edge source="101152000000000100000000" target="1011520000000001000000000"/>
+<edge source="10115" target="101153"/>
+<edge source="101153" target="1011530"/>
+<edge source="1011" target="10116"/>
+<edge source="10116" target="101160"/>
+<edge source="101160" target="1011600"/>
+<edge source="1011600" target="10116000"/>
+<edge source="101160" target="1011601"/>
+<edge source="1011601" target="10116010"/>
+<edge source="10116010" target="101160100"/>
+<edge source="101160100" target="1011601000"/>
+<edge source="1011601000" target="10116010000"/>
+<edge source="10116010000" target="101160100000"/>
+<edge source="101160100000" target="1011601000000"/>
+<edge source="1011" target="10117"/>
+<edge source="1011" target="10118"/>
+<edge source="10118" target="101180"/>
+<edge source="101180" target="1011800"/>
+<edge source="1011800" target="10118000"/>
+<edge source="10118000" target="101180000"/>
+<edge source="101180000" target="1011800000"/>
+<edge source="1011800000" target="10118000000"/>
+<edge source="10118000000" target="101180000000"/>
+<edge source="101180000000" target="1011800000000"/>
+<edge source="1011800000000" target="10118000000000"/>
+<edge source="10118000000000" target="101180000000000"/>
+<edge source="101180000000000" target="1011800000000000"/>
+<edge source="1011800000000000" target="10118000000000000"/>
+<edge source="10118000000000000" target="101180000000000000"/>
+<edge source="101180000000000000" target="1011800000000000000"/>
+<edge source="1011800000000000000" target="10118000000000000000"/>
+<edge source="10118000000000000000" target="101180000000000000000"/>
+<edge source="1011800000000" target="10118000000001"/>
+<edge source="10118000000001" target="101180000000010"/>
+<edge source="101180000000010" target="1011800000000100"/>
+<edge source="1011800000000100" target="10118000000001000"/>
+<edge source="1011" target="10119"/>
+<edge source="10119" target="101190"/>
+<edge source="10111" target="101110"/>
+<edge source="101110" target="1011100"/>
+<edge source="1011100" target="10111000"/>
+<edge source="10111000" target="101110000"/>
+<edge source="101110000" target="1011100000"/>
+<edge source="1011100000" target="10111000000"/>
+<edge source="10111000000" target="101110000000"/>
+<edge source="101110000000" target="1011100000000"/>
+<edge source="1011100000000" target="10111000000000"/>
+<edge source="10111000000000" target="101110000000000"/>
+<edge source="101110000000000" target="1011100000000000"/>
+<edge source="1011100000000000" target="10111000000000000"/>
+<edge source="10111" target="101111"/>
+<edge source="101111" target="1011110"/>
+<edge source="1011110" target="10111100"/>
+<edge source="10111100" target="101111000"/>
+<edge source="10111" target="101112"/>
+<edge source="10111" target="101113"/>
+<edge source="101113" target="1011130"/>
+<edge source="1011130" target="10111300"/>
+<edge source="10111300" target="101113000"/>
+<edge source="101" target="1012"/>
+<edge source="1012" target="10120"/>
+<edge source="10120" target="101200"/>
+<edge source="101200" target="1012000"/>
+<edge source="1012000" target="10120000"/>
+<edge source="10120000" target="101200000"/>
+<edge source="101200000" target="1012000000"/>
+<edge source="1012000000" target="10120000000"/>
+<edge source="10120000000" target="101200000000"/>
+<edge source="101200000000" target="1012000000000"/>
+<edge source="1012000000000" target="10120000000000"/>
+<edge source="101" target="1013"/>
+<edge source="1013" target="10130"/>
+<edge source="10130" target="101300"/>
+<edge source="101300" target="1013000"/>
+<edge source="101" target="1014"/>
+<edge source="1014" target="10140"/>
+<edge source="10140" target="101400"/>
+<edge source="101400" target="1014000"/>
+<edge source="1014000" target="10140000"/>
+<edge source="10140000" target="101400000"/>
+<edge source="101400000" target="1014000000"/>
+<edge source="1014000000" target="10140000000"/>
+<edge source="10140000000" target="101400000000"/>
+<edge source="101400000000" target="1014000000000"/>
+<edge source="1014000000000" target="10140000000000"/>
+<edge source="10140000000000" target="101400000000000"/>
+<edge source="101400000000000" target="1014000000000000"/>
+<edge source="1014000000000000" target="10140000000000000"/>
+<edge source="10140000000000000" target="101400000000000000"/>
+<edge source="101400000000000000" target="1014000000000000000"/>
+<edge source="1014000000000000000" target="10140000000000000000"/>
+<edge source="10140000000000000000" target="101400000000000000000"/>
+<edge source="101400000000000000000" target="1014000000000000000000"/>
+<edge source="1014000000000000000000" target="10140000000000000000000"/>
+<edge source="10140000000000000000000" target="101400000000000000000000"/>
+<edge source="101" target="1015"/>
+<edge source="1015" target="10150"/>
+<edge source="10150" target="101500"/>
+<edge source="101500" target="1015000"/>
+<edge source="1015000" target="10150000"/>
+<edge source="10150000" target="101500000"/>
+<edge source="101500000" target="1015000000"/>
+<edge source="1015000000" target="10150000000"/>
+<edge source="10150000000" target="101500000000"/>
+<edge source="10150" target="101501"/>
+<edge source="101501" target="1015010"/>
+<edge source="1015010" target="10150100"/>
+<edge source="10150100" target="101501000"/>
+<edge source="101501000" target="1015010000"/>
+<edge source="1015010000" target="10150100000"/>
+<edge source="10150100000" target="101501000000"/>
+<edge source="101501000000" target="1015010000000"/>
+<edge source="1015010000000" target="10150100000000"/>
+<edge source="10150100000000" target="101501000000000"/>
+<edge source="101501000000000" target="1015010000000000"/>
+<edge source="1015010000000000" target="10150100000000000"/>
+<edge source="101" target="1016"/>
+<edge source="1016" target="10160"/>
+<edge source="101" target="1017"/>
+<edge source="1017" target="10170"/>
+<edge source="10170" target="101700"/>
+<edge source="101700" target="1017000"/>
+<edge source="1017000" target="10170000"/>
+<edge source="10170000" target="101700000"/>
+<edge source="101700000" target="1017000000"/>
+<edge source="1017000000" target="10170000000"/>
+<edge source="10" target="102"/>
+<edge source="102" target="1020"/>
+<edge source="102" target="1021"/>
+<edge source="1021" target="10210"/>
+<edge source="10210" target="102100"/>
+<edge source="102100" target="1021000"/>
+<edge source="1021000" target="10210000"/>
+<edge source="10210000" target="102100000"/>
+<edge source="102100000" target="1021000000"/>
+<edge source="1021000000" target="10210000000"/>
+<edge source="102" target="1022"/>
+<edge source="1022" target="10220"/>
+<edge source="10220" target="102200"/>
+<edge source="102200" target="1022000"/>
+<edge source="1022000" target="10220000"/>
+<edge source="10220000" target="102200000"/>
+<edge source="102200000" target="1022000000"/>
+<edge source="1022000000" target="10220000000"/>
+<edge source="10220000000" target="102200000000"/>
+<edge source="10" target="103"/>
+<edge source="103" target="1030"/>
+<edge source="1030" target="10300"/>
+<edge source="10300" target="103000"/>
+<edge source="103" target="1031"/>
+<edge source="1031" target="10310"/>
+<edge source="10310" target="103100"/>
+<edge source="103100" target="1031000"/>
+<edge source="1031000" target="10310000"/>
+<edge source="10310000" target="103100000"/>
+<edge source="103100000" target="1031000000"/>
+<edge source="1031000000" target="10310000000"/>
+<edge source="10310000000" target="103100000000"/>
+<edge source="103100000000" target="1031000000000"/>
+<edge source="1031000000000" target="10310000000000"/>
+<edge source="10310000000000" target="103100000000000"/>
+<edge source="103" target="1032"/>
+<edge source="1032" target="10320"/>
+<edge source="10320" target="103200"/>
+<edge source="103200" target="1032000"/>
+<edge source="1032000" target="10320000"/>
+<edge source="10320000" target="103200000"/>
+<edge source="103200000" target="1032000000"/>
+<edge source="1032000000" target="10320000000"/>
+<edge source="10320000000" target="103200000000"/>
+<edge source="1032" target="10321"/>
+<edge source="10321" target="103210"/>
+<edge source="103210" target="1032100"/>
+<edge source="1032100" target="10321000"/>
+<edge source="10321000" target="103210000"/>
+<edge source="10" target="104"/>
+<edge source="1" target="11"/>
+<edge source="11" target="110"/>
+<edge source="110" target="1100"/>
+<edge source="1100" target="11000"/>
+<edge source="11000" target="110000"/>
+<edge source="110000" target="1100000"/>
+</graph>
+</graphml>

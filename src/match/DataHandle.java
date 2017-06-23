@@ -56,14 +56,21 @@ public class DataHandle {
         return new SingleCellMatrix();
     }
     
-    public BulkSequence getBulk(){
+    public BulkSequence getBulk(int method){
         BulkSequence bs = new BulkSequence();
         try(BufferedReader br = new BufferedReader(new FileReader(this.datafile))){
             
             String line = br.readLine();
             String[] lines = line.split(",");
             for(int i = 1; i < lines.length; i++){
-                String[] values = lines[i].split("_");
+                String[] values = new String[2];
+                if(method == 0)
+                {
+                    values = lines[i].split("_");
+                }
+                else if(method == 1){
+                    values = lines[i].split(" ");
+                }
                 Mutations mt = new Mutations(lines[i], Double.parseDouble(values[1]));
                 bs.add(mt);
             }
@@ -78,4 +85,6 @@ public class DataHandle {
         }
         return bs;
     }
+    
+    
 }

@@ -90,36 +90,55 @@ public class MATCH {
         
         //MATCH 2.0 06132017 Jianshu Zhang
         
-        String inputFile = "./TestData/MatrixTree100/MutMatrix-VAF-SIMU-NUM-0.csv";
-        String outputFile = "./Test3.csv";
+        String inputFile = "./TestData/Bladdar/Input_CSV.csv";
+        String outputFile = "./Test4.csv";
         DataHandle dh = new DataHandle(inputFile);
         SingleCellMatrix scm = dh.getSCM();
         
+        
+        System.out.println(scm.rowSize);
         //DataMatrix dm = scm.getDataMatrix();
         
         //System.out.println(dm.columnSize() + " " + dm.rowSize());
         
-        BulkSequence bs = dh.getBulk();
+        BulkSequence bs = dh.getBulk(1);
+        
+        
+        
+        System.out.println(bs.size());
         //VAFMatrix vafm = bs.getVafMatrix(dm.getNameSpace());
         
         //System.out.println(vafm.getColumnSize() + " " + vafm.getRowSize());
         
         scm.pathSort(bs);
-        scm.commonGeneScoring(0.8);
+        scm.commonGeneScoring(0.1);
         
         scm.commonRoot();
         
         PartialTree pt = PartialTree.makeATree(scm);
         
-        //pt.reduceRepeat(0);
+        
+        System.out.println(pt.size);
+        
+        pt.outputCSV("./Test5.csv");
+        
+        pt.reduceRepeat(1);
+        
+        pt.outputCSV(outputFile);
+        
+        System.out.println(pt.size);
+        System.out.println(pt.muts.size());
         
         AncestorMatrix am = pt.getAncestorMatrix();
-        /*for(String s: am.getNameSpace().getNames()){
-            System.out.println(s);
-        }*/
         
-        /*System.out.println(am.size());
         
+        
+        
+        //System.out.println(am.size());
+        
+        //System.out.println(am);
+        System.out.println(am.getNameSpace());
+        /*
         VAFMatrix vafm = bs.getVafMatrix(am.getNameSpace());
         
         DataMatrix dm = dh.getSCM().getDataMatrix(am.getNameSpace());
