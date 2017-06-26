@@ -95,55 +95,34 @@ public class MATCH {
         DataHandle dh = new DataHandle(inputFile);
         SingleCellMatrix scm = dh.getSCM();
         
-        
-        System.out.println(scm.rowSize);
-        //DataMatrix dm = scm.getDataMatrix();
-        
+        ///System.out.println(scm.rowSize);
         //System.out.println(dm.columnSize() + " " + dm.rowSize());
-        
         BulkSequence bs = dh.getBulk(1);
-        
-        
-        
-        System.out.println(bs.size());
-        //VAFMatrix vafm = bs.getVafMatrix(dm.getNameSpace());
-        
+        //System.out.println(bs.size());
         //System.out.println(vafm.getColumnSize() + " " + vafm.getRowSize());
         
         scm.pathSort(bs);
         scm.commonGeneScoring(0.1);
-        
         scm.commonRoot();
-        
         PartialTree pt = PartialTree.makeATree(scm);
-        
         
         System.out.println(pt.size);
         
-        pt.outputCSV("./Test5.csv");
+       // pt.outputCSV("./Test5.csv");
         
         pt.reduceRepeat(1);
         
-        pt.outputCSV(outputFile);
-        
-        System.out.println(pt.size);
+        //pt.outputCSV(outputFile);
+        //System.out.println(pt.size);
         System.out.println(pt.muts.size());
-        
         AncestorMatrix am = pt.getAncestorMatrix();
         
-        
-        
-        
         //System.out.println(am.size());
-        
         //System.out.println(am);
         System.out.println(am.getNameSpace());
-        /*
         VAFMatrix vafm = bs.getVafMatrix(am.getNameSpace());
-        
         DataMatrix dm = dh.getSCM().getDataMatrix(am.getNameSpace());
         vafm.updateWithDataMatrix(dm);
-        //am.reArrange(dm.getNameSpace());
         double alpha = 0.00001;
         double beta = 0.00001;
         int repeatLimits = 800000;
@@ -151,8 +130,8 @@ public class MATCH {
         
         MCMC myMcmc = new MCMC(am, dm, vafm, alpha, beta);
         double finalScore = myMcmc.startMCMCPlus(repeatLimits, 1, proportion);
-        
-        am = myMcmc.getAncestorMatrix();*/
+       
+        //am = myMcmc.getAncestorMatrix();
         SciteTree st = SciteTree.makeASciteTree(am, am.getNameSpace());
         
         st.outputCSV(outputFile);
