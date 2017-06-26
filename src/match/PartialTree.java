@@ -256,15 +256,13 @@ public class PartialTree {
                 ArrayList<TreeNode> children = parent.getChildren();
                 for(int i = 0; i < children.size(); i++){
                     if(children.get(i).getName() == tn.getName()){
-                        parent.removeChild(i);
-                        this.size--;
+                        this.removeNode(tn);
                         int k = this.muts.indexOf(tn.getName());
                         this.muts.remove(k);
                         break;
                     }
                 }
                 for(TreeNode node: tn.getChildren()){
-                    parent.addChild(node);
                     this.checkNode(node, muts, level);
                 }
                 
