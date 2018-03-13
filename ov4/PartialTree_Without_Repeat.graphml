@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE graphml><graphml>
+<key id="nodename" for="node" attr.name="nodename" attr.type="string"/>
+<graph id="G" edgedefault="directed">
+<node id="1">
+	<data key="nodename">chr16:20838553 213.2</data>
+</node>
+<node id="10">
+	<data key="nodename">chr1:146454644 184.6</data>
+</node>
+<node id="100">
+	<data key="nodename">chr3:191100561 177.5</data>
+</node>
+<node id="1000">
+	<data key="nodename">chr17:26081029 160.1</data>
+</node>
+<node id="10000">
+	<data key="nodename">chr7:20683204 157.5</data>
+</node>
+<node id="100000">
+	<data key="nodename">chr2:85549868 153.4</data>
+</node>
+<node id="1000000">
+	<data key="nodename">chr3:113022996 139.4</data>
+</node>
+<node id="10000000">
+	<data key="nodename">chr18:76870397 135.8</data>
+</node>
+<node id="100000000">
+	<data key="nodename">chr11:58190112 128.6</data>
+</node>
+<node id="1000000000">
+	<data key="nodename">chr17:800125 121.8</data>
+</node>
+<node id="10000000000">
+	<data key="nodename">chr17:4060380 120.4</data>
+</node>
+<node id="100000000000">
+	<data key="nodename">chr16:69992941 116.9</data>
+</node>
+<node id="1000000000000">
+	<data key="nodename">chr9:19058743 116.4</data>
+</node>
+<node id="10000000000000">
+	<data key="nodename">chr3:172365619 116.1</data>
+</node>
+<node id="100000000000000">
+	<data key="nodename">chr16:4414727 110.9</data>
+</node>
+<node id="1000000000000000">
+	<data key="nodename">chr9:137982127 88.8</data>
+</node>
+<node id="10000000000000000">
+	<data key="nodename">chr16:3166618 87.1</data>
+</node>
+<node id="100000000000000000">
+	<data key="nodename">chr7:143341171 85.0</data>
+</node>
+<node id="1000000000000000000">
+	<data key="nodename">chr17:18565350 83.0</data>
+</node>
+<node id="10000000000000000000">
+	<data key="nodename">chr15:22383064 81.7</data>
+</node>
+<node id="100000000000000000000">
+	<data key="nodename">chr10:17193346 81.3</data>
+</node>
+<node id="1000000000000000000000">
+	<data key="nodename">chr19:40376946 76.8</data>
+</node>
+<node id="10000000000000000000000">
+	<data key="nodename">chr2:92291435 72.0</data>
+</node>
+<node id="100000000000000000000000">
+	<data key="nodename">chr1:248247140 71.8</data>
+</node>
+<node id="1000000000000000000000000">
+	<data key="nodename">chr1:152188920 69.4</data>
+</node>
+<node id="10000000000000000000000000">
+	<data key="nodename">chr17:43596694 69.1</data>
+</node>
+<node id="100000000000000000000000000">
+	<data key="nodename">chr15:45410029 67.3</data>
+</node>
+<node id="1000000000000000000000000000">
+	<data key="nodename">chr3:100558416 65.4</data>
+</node>
+<node id="10000000000000000000000000000">
+	<data key="nodename">chr22:18844925 65.2</data>
+</node>
+<node id="100000000000000000000000000000">
+	<data key="nodename">chr1:178482319 63.1</data>
+</node>
+<node id="1000000000000000000000000000000">
+	<data key="nodename">chr21:9907222 61.6</data>
+</node>
+<node id="10000000000000000000000000000000">
+	<data key="nodename">chr18:32826636 59.0</data>
+</node>
+<node id="100000000000000000000000000000000">
+	<data key="nodename">chr16:30234837 57.5</data>
+</node>
+<node id="1000000000000000000000000000000000">
+	<data key="nodename">chr1:147555353 49.0</data>
+</node>
+<node id="10000000000000000000000000000000000">
+	<data key="nodename">chrX:78011061 47.9</data>
+</node>
+<node id="100000000000000000000000000000000000">
+	<data key="nodename">chr10:28250635 45.5</data>
+</node>
+<node id="1000000000000000000000000000000000000">
+	<data key="nodename">chr9:42874985 44.2</data>
+</node>
+<node id="10000000000000000000000000000000000000">
+	<data key="nodename">chr10:28250610 42.9</data>
+</node>
+<node id="100000000000000000000000000000000000000">
+	<data key="nodename">chr9:42875013 41.1</data>
+</node>
+<node id="1000000000000000000000000000000000000000">
+	<data key="nodename">chr9:66971055 37.9</data>
+</node>
+<node id="10000000000000000000000000000000000000000">
+	<data key="nodename">chr9:67331137 36.7</data>
+</node>
+<node id="100000000000000000000000000000000000000000">
+	<data key="nodename">chr4:9250430 35.4</data>
+</node>
+<node id="1000000000000000000000000000000000000000000">
+	<data key="nodename">chr18:18520259 31.9</data>
+</node>
+<node id="10000000000000000000000000000000000000000000">
+	<data key="nodename">chr16:8998164 22.0</data>
+</node>
+<node id="100000000000000000000000000000000000001">
+	<data key="nodename">chr1:142690154 41.4</data>
+</node>
+<node id="11">
+	<data key="nodename">chr5:126792762 196.4</data>
+</node>
+<node id="110">
+	<data key="nodename">chr5:42892803 178.9</data>
+</node>
+<node id="1100">
+	<data key="nodename">chr5:66492412 158.8</data>
+</node>
+<node id="11000">
+	<data key="nodename">chr2:85549874 143.0</data>
+</node>
+<node id="110000">
+	<data key="nodename">chr11:17408496 131.9</data>
+</node>
+<node id="1100000">
+	<data key="nodename">chr1:145301831 115.6</data>
+</node>
+<node id="11000000">
+	<data key="nodename">chr4:110866442 115.3</data>
+</node>
+<node id="110000000">
+	<data key="nodename">chr9:30689788 113.5</data>
+</node>
+<node id="1100000000">
+	<data key="nodename">chr11:11362285 100.9</data>
+</node>
+<node id="11000000000">
+	<data key="nodename">chr20:17474791 95.9</data>
+</node>
+<node id="110000000000">
+	<data key="nodename">chr3:105587670 88.6</data>
+</node>
+<node id="1100000000000">
+	<data key="nodename">chr6:35452346 88.2</data>
+</node>
+<node id="11000000000000">
+	<data key="nodename">chr11:127810848 86.6</data>
+</node>
+<node id="110000000000000">
+	<data key="nodename">chr3:195506914 55.0</data>
+</node>
+<node id="1100000000000000">
+	<data key="nodename">chr7:142468318 52.1</data>
+</node>
+<node id="11000000000000000">
+	<data key="nodename">chr1:13364798 49.9</data>
+</node>
+<node id="110000000000000000">
+	<data key="nodename">chr1:13364827 49.4</data>
+</node>
+<node id="1100000000000000000">
+	<data key="nodename">chr1:16907466 44.7</data>
+</node>
+<node id="11000000000000000000">
+	<data key="nodename">chr3:195507694 43.5</data>
+</node>
+<node id="110000000000000000000">
+	<data key="nodename">chr1:21806624 38.6</data>
+</node>
+<node id="1100000000000000000000">
+	<data key="nodename">chr7:76169504 37.7</data>
+</node>
+<node id="11000000000000000000000">
+	<data key="nodename">chr19:47870310 32.5</data>
+</node>
+<node id="110000000000000000000000">
+	<data key="nodename">chr18:18519007 32.4</data>
+</node>
+<node id="1100000000000000000000000">
+	<data key="nodename">chr8:30695359 31.4</data>
+</node>
+<node id="11000000000000000000000000">
+	<data key="nodename">chr22:51183266 28.9</data>
+</node>
+<node id="110000000000000000000000000">
+	<data key="nodename">chr2:133028365 17.2</data>
+</node>
+<node id="11000000001">
+	<data key="nodename">chr7:2646723 99.7</data>
+</node>
+<node id="110000000010">
+	<data key="nodename">chr15:92708268 94.8</data>
+</node>
+<node id="1100000000100">
+	<data key="nodename">chr8:132002576 90.0</data>
+</node>
+<node id="11000000001000">
+	<data key="nodename">chr16:89607679 81.0</data>
+</node>
+<node id="110000000010000">
+	<data key="nodename">chr7:100643490 71.1</data>
+</node>
+<node id="1100000000100000">
+	<data key="nodename">chr1:145316930 69.3</data>
+</node>
+<node id="11000000001000000">
+	<data key="nodename">chr9:66833916 52.8</data>
+</node>
+<node id="110000000010000000">
+	<data key="nodename">chr9:117877 52.2</data>
+</node>
+<node id="1100000000100000000">
+	<data key="nodename">chr7:76682539 51.6</data>
+</node>
+<node id="11000000001000000000">
+	<data key="nodename">chr7:76169411 49.8</data>
+</node>
+<node id="110000000010000000000">
+	<data key="nodename">chr9:66833926 47.4</data>
+</node>
+<node id="1100000000100000000000">
+	<data key="nodename">chr11:1265891 47.2</data>
+</node>
+<node id="11000000001000000000000">
+	<data key="nodename">chr9:69711208 44.2</data>
+</node>
+<node id="110000000010000000000000">
+	<data key="nodename">chr12:9456539 40.7</data>
+</node>
+<node id="1100000000100000000000000">
+	<data key="nodename">chr4:9218814 35.1</data>
+</node>
+<node id="11000000001000000000000000">
+	<data key="nodename">chr19:47870285 33.1</data>
+</node>
+<node id="110000000010000000000000000">
+	<data key="nodename">chr11:1265951 30.7</data>
+</node>
+<node id="1100000000100000000000000000">
+	<data key="nodename">chr2:133028373 15.7</data>
+</node>
+<node id="12">
+	<data key="nodename">chr3:123021870 159.9</data>
+</node>
+<node id="120">
+	<data key="nodename">chr6:97339078 136.3</data>
+</node>
+<node id="1200">
+	<data key="nodename">chr2:37406680 119.2</data>
+</node>
+<node id="12000">
+	<data key="nodename">chr9:135862632 112.4</data>
+</node>
+<node id="120000">
+	<data key="nodename">chr2:191839464 108.4</data>
+</node>
+<node id="1200000">
+	<data key="nodename">chr2:220354108 94.7</data>
+</node>
+<node id="12000000">
+	<data key="nodename">chr8:7308729 88.1</data>
+</node>
+<node id="120000000">
+	<data key="nodename">chr11:124972377 82.1</data>
+</node>
+<node id="1200000000">
+	<data key="nodename">chr12:9020489 81.8</data>
+</node>
+<node id="12000000000">
+	<data key="nodename">chr2:109988215 81.5</data>
+</node>
+<node id="120000000000">
+	<data key="nodename">chr16:84211483 80.8</data>
+</node>
+<node id="1200000000000">
+	<data key="nodename">chr18:18519394 80.4</data>
+</node>
+<node id="12000000000000">
+	<data key="nodename">chr15:22413944 78.4</data>
+</node>
+<node id="120000000000000">
+	<data key="nodename">chr10:51855450 75.9</data>
+</node>
+<node id="1200000000000000">
+	<data key="nodename">chr10:51855449 73.9</data>
+</node>
+<node id="12000000000000000">
+	<data key="nodename">chr16:15813633 73.1</data>
+</node>
+<node id="120000000000000000">
+	<data key="nodename">chr16:2090176 67.5</data>
+</node>
+<node id="1200000000000000000">
+	<data key="nodename">chr3:195706732 56.1</data>
+</node>
+<node id="12000000000000000000">
+	<data key="nodename">chr3:195706728 54.1</data>
+</node>
+<node id="120000000000000000000">
+	<data key="nodename">chr10:42529426 53.7</data>
+</node>
+<node id="1200000000000000000000">
+	<data key="nodename">chr10:42529451 47.2</data>
+</node>
+<node id="12000000000000000000000">
+	<data key="nodename">chr10:42529421 46.4</data>
+</node>
+<node id="120000000000000000000000">
+	<data key="nodename">chr10:42529429 44.8</data>
+</node>
+<node id="1200000000000000000000000">
+	<data key="nodename">chr10:42529459 43.7</data>
+</node>
+<node id="12000000000000000000000000">
+	<data key="nodename">chr11:1017744 42.5</data>
+</node>
+<node id="120000000000000000000000000">
+	<data key="nodename">chrY:59355838 42.2</data>
+</node>
+<node id="1200000000000000000000000000">
+	<data key="nodename">chr17:39382821 38.4</data>
+</node>
+<node id="12000000000000000000000000000">
+	<data key="nodename">chr11:4976811 38.4</data>
+</node>
+<node id="120000000000000000000000000000">
+	<data key="nodename">chr9:96278291 37.6</data>
+</node>
+<node id="1200000000000000000000000000000">
+	<data key="nodename">chr17:16097899 37.1</data>
+</node>
+<node id="12000000000000000000000000000000">
+	<data key="nodename">chr7:100550889 36.2</data>
+</node>
+<node id="12000000000001">
+	<data key="nodename">chr6:32714164 59.0</data>
+</node>
+<node id="120000000000010">
+	<data key="nodename">chr6:32714168 59.0</data>
+</node>
+<node id="1200000000000100">
+	<data key="nodename">chr7:143452675 58.9</data>
+</node>
+<node id="12000000000001000">
+	<data key="nodename">chr9:33799163 58.3</data>
+</node>
+<node id="120000000000010000">
+	<data key="nodename">chr1:121484564 58.2</data>
+</node>
+<node id="1200000000000100000">
+	<data key="nodename">chr9:67281734 57.5</data>
+</node>
+<node id="12000000000001000000">
+	<data key="nodename">chr1:121484566 57.0</data>
+</node>
+<node id="120000000000010000000">
+	<data key="nodename">chr1:144217516 52.3</data>
+</node>
+<node id="1200000000000100000000">
+	<data key="nodename">chr9:67281836 48.7</data>
+</node>
+<node id="12000000000001000000000">
+	<data key="nodename">chr9:67281854 46.3</data>
+</node>
+<node id="120000000000010000000000">
+	<data key="nodename">chr1:248652175 44.6</data>
+</node>
+<node id="1200000000000100000000000">
+	<data key="nodename">chr11:534242 42.1</data>
+</node>
+<node id="12000000000001000000000000">
+	<data key="nodename">chr9:67281560 41.3</data>
+</node>
+<node id="120000000000010000000000000">
+	<data key="nodename">chr4:68265582 36.4</data>
+</node>
+<node id="1200000000000100000000000000">
+	<data key="nodename">chr9:67281576 34.4</data>
+</node>
+<node id="12000000000001000000000000000">
+	<data key="nodename">chr15:23407058 33.9</data>
+</node>
+<node id="120000000000010000000000000000">
+	<data key="nodename">chr1:24288193 27.0</data>
+</node>
+<edge source="1" target="10"/>
+<edge source="10" target="100"/>
+<edge source="100" target="1000"/>
+<edge source="1000" target="10000"/>
+<edge source="10000" target="100000"/>
+<edge source="100000" target="1000000"/>
+<edge source="1000000" target="10000000"/>
+<edge source="10000000" target="100000000"/>
+<edge source="100000000" target="1000000000"/>
+<edge source="1000000000" target="10000000000"/>
+<edge source="10000000000" target="100000000000"/>
+<edge source="100000000000" target="1000000000000"/>
+<edge source="1000000000000" target="10000000000000"/>
+<edge source="10000000000000" target="100000000000000"/>
+<edge source="100000000000000" target="1000000000000000"/>
+<edge source="1000000000000000" target="10000000000000000"/>
+<edge source="10000000000000000" target="100000000000000000"/>
+<edge source="100000000000000000" target="1000000000000000000"/>
+<edge source="1000000000000000000" target="10000000000000000000"/>
+<edge source="10000000000000000000" target="100000000000000000000"/>
+<edge source="100000000000000000000" target="1000000000000000000000"/>
+<edge source="1000000000000000000000" target="10000000000000000000000"/>
+<edge source="10000000000000000000000" target="100000000000000000000000"/>
+<edge source="100000000000000000000000" target="1000000000000000000000000"/>
+<edge source="1000000000000000000000000" target="10000000000000000000000000"/>
+<edge source="10000000000000000000000000" target="100000000000000000000000000"/>
+<edge source="100000000000000000000000000" target="1000000000000000000000000000"/>
+<edge source="1000000000000000000000000000" target="10000000000000000000000000000"/>
+<edge source="10000000000000000000000000000" target="100000000000000000000000000000"/>
+<edge source="100000000000000000000000000000" target="1000000000000000000000000000000"/>
+<edge source="1000000000000000000000000000000" target="10000000000000000000000000000000"/>
+<edge source="10000000000000000000000000000000" target="100000000000000000000000000000000"/>
+<edge source="100000000000000000000000000000000" target="1000000000000000000000000000000000"/>
+<edge source="1000000000000000000000000000000000" target="10000000000000000000000000000000000"/>
+<edge source="10000000000000000000000000000000000" target="100000000000000000000000000000000000"/>
+<edge source="100000000000000000000000000000000000" target="1000000000000000000000000000000000000"/>
+<edge source="1000000000000000000000000000000000000" target="10000000000000000000000000000000000000"/>
+<edge source="10000000000000000000000000000000000000" target="100000000000000000000000000000000000000"/>
+<edge source="100000000000000000000000000000000000000" target="1000000000000000000000000000000000000000"/>
+<edge source="1000000000000000000000000000000000000000" target="10000000000000000000000000000000000000000"/>
+<edge source="10000000000000000000000000000000000000000" target="100000000000000000000000000000000000000000"/>
+<edge source="100000000000000000000000000000000000000000" target="1000000000000000000000000000000000000000000"/>
+<edge source="1000000000000000000000000000000000000000000" target="10000000000000000000000000000000000000000000"/>
+<edge source="10000000000000000000000000000000000000" target="100000000000000000000000000000000000001"/>
+<edge source="1" target="11"/>
+<edge source="11" target="110"/>
+<edge source="110" target="1100"/>
+<edge source="1100" target="11000"/>
+<edge source="11000" target="110000"/>
+<edge source="110000" target="1100000"/>
+<edge source="1100000" target="11000000"/>
+<edge source="11000000" target="110000000"/>
+<edge source="110000000" target="1100000000"/>
+<edge source="1100000000" target="11000000000"/>
+<edge source="11000000000" target="110000000000"/>
+<edge source="110000000000" target="1100000000000"/>
+<edge source="1100000000000" target="11000000000000"/>
+<edge source="11000000000000" target="110000000000000"/>
+<edge source="110000000000000" target="1100000000000000"/>
+<edge source="1100000000000000" target="11000000000000000"/>
+<edge source="11000000000000000" target="110000000000000000"/>
+<edge source="110000000000000000" target="1100000000000000000"/>
+<edge source="1100000000000000000" target="11000000000000000000"/>
+<edge source="11000000000000000000" target="110000000000000000000"/>
+<edge source="110000000000000000000" target="1100000000000000000000"/>
+<edge source="1100000000000000000000" target="11000000000000000000000"/>
+<edge source="11000000000000000000000" target="110000000000000000000000"/>
+<edge source="110000000000000000000000" target="1100000000000000000000000"/>
+<edge source="1100000000000000000000000" target="11000000000000000000000000"/>
+<edge source="11000000000000000000000000" target="110000000000000000000000000"/>
+<edge source="1100000000" target="11000000001"/>
+<edge source="11000000001" target="110000000010"/>
+<edge source="110000000010" target="1100000000100"/>
+<edge source="1100000000100" target="11000000001000"/>
+<edge source="11000000001000" target="110000000010000"/>
+<edge source="110000000010000" target="1100000000100000"/>
+<edge source="1100000000100000" target="11000000001000000"/>
+<edge source="11000000001000000" target="110000000010000000"/>
+<edge source="110000000010000000" target="1100000000100000000"/>
+<edge source="1100000000100000000" target="11000000001000000000"/>
+<edge source="11000000001000000000" target="110000000010000000000"/>
+<edge source="110000000010000000000" target="1100000000100000000000"/>
+<edge source="1100000000100000000000" target="11000000001000000000000"/>
+<edge source="11000000001000000000000" target="110000000010000000000000"/>
+<edge source="110000000010000000000000" target="1100000000100000000000000"/>
+<edge source="1100000000100000000000000" target="11000000001000000000000000"/>
+<edge source="11000000001000000000000000" target="110000000010000000000000000"/>
+<edge source="110000000010000000000000000" target="1100000000100000000000000000"/>
+<edge source="1" target="12"/>
+<edge source="12" target="120"/>
+<edge source="120" target="1200"/>
+<edge source="1200" target="12000"/>
+<edge source="12000" target="120000"/>
+<edge source="120000" target="1200000"/>
+<edge source="1200000" target="12000000"/>
+<edge source="12000000" target="120000000"/>
+<edge source="120000000" target="1200000000"/>
+<edge source="1200000000" target="12000000000"/>
+<edge source="12000000000" target="120000000000"/>
+<edge source="120000000000" target="1200000000000"/>
+<edge source="1200000000000" target="12000000000000"/>
+<edge source="12000000000000" target="120000000000000"/>
+<edge source="120000000000000" target="1200000000000000"/>
+<edge source="1200000000000000" target="12000000000000000"/>
+<edge source="12000000000000000" target="120000000000000000"/>
+<edge source="120000000000000000" target="1200000000000000000"/>
+<edge source="1200000000000000000" target="12000000000000000000"/>
+<edge source="12000000000000000000" target="120000000000000000000"/>
+<edge source="120000000000000000000" target="1200000000000000000000"/>
+<edge source="1200000000000000000000" target="12000000000000000000000"/>
+<edge source="12000000000000000000000" target="120000000000000000000000"/>
+<edge source="120000000000000000000000" target="1200000000000000000000000"/>
+<edge source="1200000000000000000000000" target="12000000000000000000000000"/>
+<edge source="12000000000000000000000000" target="120000000000000000000000000"/>
+<edge source="120000000000000000000000000" target="1200000000000000000000000000"/>
+<edge source="1200000000000000000000000000" target="12000000000000000000000000000"/>
+<edge source="12000000000000000000000000000" target="120000000000000000000000000000"/>
+<edge source="120000000000000000000000000000" target="1200000000000000000000000000000"/>
+<edge source="1200000000000000000000000000000" target="12000000000000000000000000000000"/>
+<edge source="1200000000000" target="12000000000001"/>
+<edge source="12000000000001" target="120000000000010"/>
+<edge source="120000000000010" target="1200000000000100"/>
+<edge source="1200000000000100" target="12000000000001000"/>
+<edge source="12000000000001000" target="120000000000010000"/>
+<edge source="120000000000010000" target="1200000000000100000"/>
+<edge source="1200000000000100000" target="12000000000001000000"/>
+<edge source="12000000000001000000" target="120000000000010000000"/>
+<edge source="120000000000010000000" target="1200000000000100000000"/>
+<edge source="1200000000000100000000" target="12000000000001000000000"/>
+<edge source="12000000000001000000000" target="120000000000010000000000"/>
+<edge source="120000000000010000000000" target="1200000000000100000000000"/>
+<edge source="1200000000000100000000000" target="12000000000001000000000000"/>
+<edge source="12000000000001000000000000" target="120000000000010000000000000"/>
+<edge source="120000000000010000000000000" target="1200000000000100000000000000"/>
+<edge source="1200000000000100000000000000" target="12000000000001000000000000000"/>
+<edge source="12000000000001000000000000000" target="120000000000010000000000000000"/>
+</graph>
+</graphml>

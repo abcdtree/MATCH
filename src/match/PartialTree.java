@@ -17,16 +17,19 @@ public class PartialTree {
     TreeNode root;
     int size;
     ArrayList<String> muts;
+    HashMap<TreeNode, Integer> mutValue;
     private PartialTree(){
         this.root = null;
         this.size = 0;
         this.muts = new ArrayList<String>();
+        this.mutValue = new HashMap<TreeNode, Integer>();
     }
     
     private PartialTree(TreeNode root){
         this.root = root;
         this.size = 1;
         this.muts = new ArrayList<String>();
+        this.mutValue = new HashMap<TreeNode, Integer>();
         muts.add(this.root.getName());
     }
     
@@ -155,6 +158,39 @@ public class PartialTree {
         }
     }
     
+    private boolean compareName(String name1, String name2){
+        int ccf1 = Integer.parseInt(name1.split(" ")[1]);
+        int ccf2 = Integer.parseInt(name2.split(" ")[1]);
+        return ccf1 < ccf2; 
+    }
+    
+    public void rootReduce(){
+        if(this.root.getName() == "Root"){
+            ArrayList<TreeNode> potentialRoot = this.root.getChildren();
+            TreeNode BestRoot = null;
+            for(TreeNode tn: potentialRoot){
+                if(BestRoot == null){
+                    BestRoot = tn;
+                }
+                else{
+                    String bestRootName = BestRoot.getName();
+                    String currentName = tn.getName();
+                    if(this.compareName(bestRootName, currentName)){
+                        BestRoot = tn;
+                    }
+                }
+            }
+            this.setRoot(BestRoot);
+            for(TreeNode tn: potentialRoot){
+                if(this.root != tn){
+                    this.root.addChild(tn);
+                }
+            }
+            this.muts.remove(0);
+            this.size--;
+        }
+    }
+    
     public void reduceRepeat(int method){
         //method id == i
         //method 0
@@ -175,16 +211,42 @@ public class PartialTree {
         //method 1
         //random pick one between the repeat nodes
         else if(method == 1){
-            this.checkRepeat();
+            this.checkRepeat(0);
+        }
+        //pick the one shared by largest number of leaves
+        else if(method == 2){
+            this.checkShared();
         }
     }
     
-    private void checkRepeat(){
+    private void checkShared(){
+        int rootScore = this.initialMutValue(this.root);
+        this.checkRepeat(1);
+    }
+    
+    private int initialMutValue(TreeNode tn){
+        String nName = tn.getName();
+        int sharedScore = 0;
+        for(TreeNode n: tn.getChildren()){
+            sharedScore += initialMutValue(n);
+        }
+        if(sharedScore == 0){
+            sharedScore = 1;
+        }
+        this.mutValue.put(tn, sharedScore);
+        return sharedScore;
+    }
+    
+    private int getMutValue(TreeNode tn){
+        return this.mutValue.get(tn);
+    }
+    
+    private void checkRepeat(int type){
         boolean noRepeat = false;
         ArrayList<TreeNode> allNode = new ArrayList<TreeNode>();
         this.reAddNode(this.root, allNode);
         while(true){
-            if(!this.findRepeat(allNode)){
+            if(!this.findRepeat(allNode, type)){
                 break;
             }
         }
@@ -219,19 +281,33 @@ public class PartialTree {
         }
     }
     
-    private boolean findRepeat(ArrayList<TreeNode> nodes){
+    private boolean findRepeat(ArrayList<TreeNode> nodes, int type){
         boolean flag = false;
         for(int i = 0; i < nodes.size(); i++){
             for(int j = i+1; j < nodes.size(); j++){
                 if(nodes.get(i).getName() == nodes.get(j).getName()){
-                    double k = (new Random()).nextDouble();
-                    if(k < 0.5 && i != 0){
-                        this.removeNode(nodes.get(i));
-                        nodes.remove(i);                       
+                    if(type == 0){
+                        double k = (new Random()).nextDouble();
+                        if(k < 0.5 && i != 0){
+                            this.removeNode(nodes.get(i));
+                            nodes.remove(i);                       
+                        }
+                        else{
+                            this.removeNode(nodes.get(j));
+                            nodes.remove(j);
+                        }
                     }
-                    else{
-                        this.removeNode(nodes.get(j));
-                        nodes.remove(j);
+                    else if(type == 1){
+                        int score1 = this.getMutValue(nodes.get(i));
+                        int score2 = this.getMutValue(nodes.get(j));
+                        if(score1 >= score2){
+                            this.removeNode(nodes.get(j));
+                            nodes.remove(j);
+                        }
+                        else{
+                            this.removeNode(nodes.get(i));
+                            nodes.remove(i); 
+                        }
                     }
                     flag = true;
                     break;

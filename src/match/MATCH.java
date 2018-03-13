@@ -89,9 +89,10 @@ public class MATCH {
         pt.outputCSV("./right1.csv");*/
         
         //MATCH 2.0 06132017 Jianshu Zhang
+        //MATCH 2.1 06292017 Jianshu Zhang
         
-        String inputFile = "./TestData/Bladdar/Input_CSV.csv";
-        String outputFile = "./Test4.csv";
+        String inputFile = "./NewCCF/MM1/MM1_Stem_input_newCCF_0.9577.csv";
+        //String outputFile = "./Test4.csv";
         DataHandle dh = new DataHandle(inputFile);
         SingleCellMatrix scm = dh.getSCM();
         
@@ -108,13 +109,19 @@ public class MATCH {
         
         System.out.println(pt.size);
         
-       // pt.outputCSV("./Test5.csv");
+        pt.outputCSV("./NewCCF/MM1/MM1_Stem_input_newCCF_0.9577_PartialTree_0.1.csv");
         
-        pt.reduceRepeat(1);
+        pt.reduceRepeat(2);
         
-        //pt.outputCSV(outputFile);
+        pt.outputCSV("./NewCCF/MM1/MM1_Stem_input_newCCF_0.9577_PartialTree_Without_Repeat_0.1.csv");
         //System.out.println(pt.size);
         System.out.println(pt.muts.size());
+        pt.rootReduce();
+        
+        pt.outputCSV("./NewCCF/MM1/MM1_Stem_input_newCCF_0.9577_Without_Created_Root_0.1.csv");
+        System.out.println(pt.muts.size());
+        
+        /*
         AncestorMatrix am = pt.getAncestorMatrix();
         
         //System.out.println(am.size());
@@ -123,7 +130,8 @@ public class MATCH {
         VAFMatrix vafm = bs.getVafMatrix(am.getNameSpace());
         DataMatrix dm = dh.getSCM().getDataMatrix(am.getNameSpace());
         vafm.updateWithDataMatrix(dm);
-        double alpha = 0.00001;
+        //alpha is false 
+        double alpha = 0.6;
         double beta = 0.00001;
         int repeatLimits = 800000;
         double proportion = 0.9;
@@ -134,8 +142,8 @@ public class MATCH {
         //am = myMcmc.getAncestorMatrix();
         SciteTree st = SciteTree.makeASciteTree(am, am.getNameSpace());
         
-        st.outputCSV(outputFile);
-        
+        st.outputCSV(".//MM1/MM1_MM_AfterMCMCTree_0.5.csv");
+        */
         
         
         
